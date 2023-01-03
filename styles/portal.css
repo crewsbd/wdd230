@@ -1,0 +1,63 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(231, 223, 207);
+}
+#content {
+    width: 500px;
+    margin: 20px auto;
+}
+header, footer {
+    /*background-image: linear-gradient(rgb(145, 172, 137), rgb(33, 97, 34)); */
+    background-image: linear-gradient(rgb(244, 178, 86), rgb(188, 109, 35));
+    border-radius: 100px;
+    border: 2px solid rgb(136, 82, 23);
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 10px 5px rgba(0,0,0,.2);
+    color: rgb(255,255,255);
+    text-shadow: 0px 0px 3px rgba(0,0,0,1);
+}
+header {
+    display: grid;
+    grid-template-columns: min-content auto;
+    vertical-align: middle;
+}
+header h1 {
+    vertical-align: middle;
+    columns: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+header .portrait {
+    columns: 1/2;
+    align-self: center;
+    justify-self: center;
+    /*border: 10px solid rgba(255, 255, 255, .1); */
+}
+footer {
+    text-align: center;
+}
+main h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+hr {
+    height: 10px;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 1vh;
+}
+.portrait {
+    display: inline;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.2);
+    outline : 10px solid rgba(255,255,255,.2);
+    outline-offset: -10px;
+}
+.mono-spaced {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 800px) {
+    
+
+}

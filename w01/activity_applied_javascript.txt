@@ -1,0 +1,8 @@
+1. Done 
+2. Done
+3. <script src="scripts/app.js"></script>
+4. `Current Date: ${dayName}, ${monthName} ${d.getDate()}, ${year}`
+5. let quantity = document.querySelector("#q").value;
+6. document.querySelector("p").innerHtml = "Welcome to <em>our</em> neighborhood!";
+7. document.querySelector('#temp').value = getTemperature();
+8. const divs = document.querySelectorAll('div')
