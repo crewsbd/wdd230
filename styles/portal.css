@@ -23,12 +23,12 @@ header {
 }
 header h1 {
     vertical-align: middle;
-    columns: 2/3;
+    grid-column: 2/3;
     align-self: center;
     justify-self: center;
 }
 header .portrait {
-    columns: 1/2;
+    grid-column: 1/2;
     align-self: center;
     justify-self: center;
     /*border: 10px solid rgba(255, 255, 255, .1); */
@@ -58,6 +58,6 @@ hr {
 }
 
 @media screen and (max-width: 800px) {
-    
+
 
 }
