@@ -7,7 +7,6 @@ html {
     margin: 20px auto;
 }
 header, footer {
-    /*background-image: linear-gradient(rgb(145, 172, 137), rgb(33, 97, 34)); */
     background-image: linear-gradient(rgb(244, 178, 86), rgb(188, 109, 35));
     border-radius: 100px;
     border: 2px solid rgb(136, 82, 23);
@@ -22,7 +21,6 @@ header {
     vertical-align: middle;
 }
 header h1 {
-    vertical-align: middle;
     grid-column: 2/3;
     align-self: center;
     justify-self: center;
@@ -31,7 +29,6 @@ header .portrait {
     grid-column: 1/2;
     align-self: center;
     justify-self: center;
-    /*border: 10px solid rgba(255, 255, 255, .1); */
 }
 footer {
     text-align: center;
