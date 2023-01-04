@@ -6,3 +6,4 @@
 6. document.querySelector("p").innerHtml = "Welcome to <em>our</em> neighborhood!";
 7. document.querySelector('#temp').value = getTemperature();
 8. const divs = document.querySelectorAll('div')
+9. 
