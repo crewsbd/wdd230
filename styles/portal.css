@@ -2,7 +2,6 @@
 /*font-family: 'Kanit', sans-serif;
   font-family: 'Cairo', sans-serif; */
 
-
 html {
     font-family: 'Kanit', Verdana, sans-serif;
     background-color: rgb(231, 223, 207);
@@ -71,7 +70,7 @@ hr {
 
 /*Safari doesn't display rounded outlines. */
 @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-    .portrait { 
+    #portrait { 
         outline: 0px; 
     }
 }
