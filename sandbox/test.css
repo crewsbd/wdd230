@@ -1,0 +1,14 @@
+.outter {
+    display: grid;
+    grid-template-columns: 500px 500px;
+}
+.float-left {
+    background-color: red;
+    float: left;
+    height: 100px;
+}
+.float-right {
+    background-color: red;
+    float: right;
+    height: 100px;
+}

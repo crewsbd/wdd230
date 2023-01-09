@@ -1,0 +1,19 @@
+@media only screen and (min-width: 32.5em) {
+    #content {
+        width: 500px;
+        margin: 20px auto;
+    }
+    main ul { 
+        font-size: 1.0em;
+    }
+    main ul li {
+        margin-top: 3px;
+        margin-bottom: 3px
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    #portrait {
+        width: 150px;
+    }
+}

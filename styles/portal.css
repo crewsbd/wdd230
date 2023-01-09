@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Kanit&display=swap');
+/*font-family: 'Kanit', sans-serif;
+  font-family: 'Cairo', sans-serif; */
+
+
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Kanit', Verdana, sans-serif;
     background-color: rgb(231, 223, 207);
+    font-size: 16px;
 }
 #content {
-    width: 500px;
-    margin: 20px auto;
+    width: auto;
+    margin: 20px 10px;
 }
 header, footer {
-    background-image: linear-gradient(rgb(244, 178, 86), rgb(188, 109, 35));
+    background-image: linear-gradient(rgb(244, 178, 86), rgb(173, 97, 27));
+    background-color: rgb(173,97,27);
     border-radius: 100px;
     border: 2px solid rgb(136, 82, 23);
     padding: 10px 10px 10px 10px;
     box-shadow: 0px 10px 5px rgba(0,0,0,.2);
     color: rgb(255,255,255);
     text-shadow: 0px 0px 3px rgba(0,0,0,1);
+    overflow: hidden;
 }
 header {
     display: grid;
@@ -23,11 +31,8 @@ header h1 {
     grid-column: 2/3;
     align-self: center;
     justify-self: center;
-}
-header .portrait {
-    grid-column: 1/2;
-    align-self: center;
-    justify-self: center;
+    text-align: center;
+    font-size: 2.1em;
 }
 footer {
     text-align: center;
@@ -36,24 +41,37 @@ main h2 {
     font-size: 1.5em;
     text-align: center;
 }
+main ul { 
+    font-size: 1.4em;
+}
+main ul li {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
 hr {
     height: 10px;
     background-color: rgba(0,0,0,.2);
     border-radius: 1vh;
 }
-.portrait {
+#portrait {
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+    margin-right: 10px;
     display: inline;
-    width: 150px;
+    width: 100px;
     border-radius: 50%;
     box-shadow: 0px 0px 20px rgba(0,0,0,.2);
     outline : 10px solid rgba(255,255,255,.2);
     outline-offset: -10px;
 }
 .mono-spaced {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Cairo', Courier, monospace;
 }
 
-@media screen and (max-width: 800px) {
-
-
+/*Safari doesn't display rounded outlines. */
+@supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .portrait { 
+        outline: 0px; 
+    }
 }
