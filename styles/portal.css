@@ -69,8 +69,10 @@ hr {
 }
 
 /*Safari doesn't display rounded outlines. */
+/* removed because of a broken validator and curriculum
 @supports (-webkit-appearance:none) and (stroke-color:transparent) {
     #portrait { 
         outline: 0px; 
     }
 }
+*/
