@@ -30,6 +30,16 @@ div {
     animation-direction: alternate;
     
 }
+details {
+    margin-top: 20px;
+}
+summary {
+    font-size: 1.4em;
+    font-weight: bold;
+    border: 0px none rgb(0,0,0);
+    background-color:rgb(255,255,255);
+    border-radius: 5px;
+}
 @keyframes move-ball {
     from    { left: -32px; }
     to      { left: 103%; }
@@ -44,4 +54,7 @@ div {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     /*height: 100px; */
+}
+.more-top-space {
+    margin-top: 50px;
 }
