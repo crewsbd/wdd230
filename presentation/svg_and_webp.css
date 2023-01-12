@@ -1,0 +1,47 @@
+
+body {
+    margin: 0px;
+
+}
+header {
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: gray;
+    margin: 0px;
+    padding: 0px;
+}
+div {
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 5px 10px 2px rgba(0,0,0,.1);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: 350px;
+    animation-name: pulse-background;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes move-ball {
+    from    { left: -32px; }
+    to      { left: 103%; }
+}
+@keyframes pulse-background {
+    from    {background-color: rgb(255, 255, 255); }
+    to      {background-color: rgb(200, 200, 200); }
+}
+#bouncyball {
+    position: relative;
+    animation-name: move-ball;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /*height: 100px; */
+}

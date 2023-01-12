@@ -3,7 +3,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .principle-section:nth-last-child(1) {
+    .principle-section:nth-child(2n+1):last-child {
         grid-column: 1/3;
     }
 }
