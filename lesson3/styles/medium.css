@@ -1,0 +1,21 @@
+@media only screen and (min-width: 400px) {
+    nav {
+        flex-direction: row;
+    }
+    header h1 {
+        position: relative;
+        left: -25px;
+        font-size: 2em;
+    }
+    header img {
+        width: 200px;
+    }
+    header div {
+        text-align: left;
+        align-self: flex-start;
+    }
+    nav {
+        align-self: left;
+    }
+
+}
