@@ -86,7 +86,7 @@ main {
     color: var(--primary-fg);
 }
 main h2,h3,h4 {
-    color: rgb(103, 140, 68);
+    color: rgb(88, 120, 58);
 }
 h1,h2,h3,h4 {
     font-family: 'Oswald', sans-serif;
