@@ -1,3 +1,6 @@
+/*  font-family: 'Open Sans', sans-serif;   Paragraph
+    font-family: 'Oswald', sans-serif;      Heading*/
+
 :root {
     --primary-bg: rgb(200, 220, 248);
     --primary-fg: rgb(49, 73, 49);
@@ -7,11 +10,11 @@
 
 html {
     padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif; 
 }
 
 body {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0, .2);
 }
@@ -21,13 +24,15 @@ header {
     background-color: var(--primary-bg);
     color: var(--primary-fg);
     flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 40px;
     padding-bottom: 0px;
 }
 header h1 {
-    display: inline;
-    font-size: 1.3em;
+    font-size: 1.9em;
+    font-stretch:expanded;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 header div {
     align-self: center;
@@ -44,21 +49,36 @@ nav {
     align-self: center;
     width: 100%;
 }
-header img {
+@keyframes glowing-text {
+    from    {   color: var(--primary-fg);
+                filter: brightness(100%);}
+    to      {   color: var(--primary-fg);
+                filter: brightness(250%); }
+}
+.active-nav {
+    animation-name: glowing-text;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+header div img {
     display: inline;
-    width: 100%;
+    width: 50%;
 }
 nav a {
-    background-color: rgba(255,255,255,.1);
-    color: rgba(0, 0, 0, 0.4);
-    margin: 10px;
     text-decoration: none;
+    padding: 7px 10px;
+    text-align: center;
 }
 a:link {
     color: rgb(25, 105, 136);
 }
 a:visited {
     color: rgb(0,0,0);
+}
+a:hover {
+    color: rgb(77, 75, 75);
+    background-color: rgba(255,255,255,.5);
 }
 main {
     padding: 40px;
@@ -69,5 +89,5 @@ main h2,h3,h4 {
     color: rgb(103, 140, 68);
 }
 h1,h2,h3,h4 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Oswald', sans-serif;
 }

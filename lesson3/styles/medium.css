@@ -1,21 +1,26 @@
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 550px) {
     nav {
         flex-direction: row;
-    }
-    header h1 {
-        position: relative;
-        left: -25px;
-        font-size: 2em;
-    }
-    header img {
-        width: 200px;
-    }
-    header div {
-        text-align: left;
-        align-self: flex-start;
-    }
-    nav {
         align-self: left;
     }
 
+    header {
+        align-items: flex-start;
+        justify-items: flex-end;
+    }
+    header div {
+        display: flex;
+        align-items: flex-end;
+        justify-self: flex-start;
+        width: 100%;
+    }
+    header div h1 {
+        font-size: 2em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header div img {
+        width: 120px;
+        align-self: center;
+    }
 }
