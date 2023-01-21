@@ -14,7 +14,7 @@
     --max-width: 700px;
 }
 html {
-    padding: 10px;
+    padding: 0px;
     font-family: var(--body-font); 
 }
 body {
@@ -107,5 +107,5 @@ a:hover {
 
 #logo {
     display: inline;
-    width: 50%;
+    width: 40%;
 }
