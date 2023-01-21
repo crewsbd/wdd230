@@ -92,6 +92,12 @@ a:hover {
 .open-sans {
     font-family: 'Open Sans', sans-serif;
 }
+footer {
+    background-color: var(--primary-bg);
+    color: var(--primary-fg);
+    display: flex;
+    padding: 15px 40px;
+}
 @keyframes glowing-text {
     from    {   color: var(--primary-fg);
                 filter: brightness(100%);}
