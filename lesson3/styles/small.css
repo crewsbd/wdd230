@@ -3,31 +3,32 @@
 
 :root {
     --primary-bg: rgb(200, 220, 248);
-    --primary-fg: rgb(88, 120, 58);
-    --secondary-fg: rgb(40, 51, 65);
+    --primary-fg: rgb(73, 103, 44);
+    --secondary-fg: rgb(66, 97, 135);
     --secondary-bg: rgb(253, 253, 239);
     --pop-color: rgb(166,99,23);
     --white-bump: rgba(255,255,255,.2);
     --drop-shadows: rgba(0,0,0, .2);
     --body-font: 'Open Sans', sans-serif;
     --heading-font: 'Oswald', sans-serif; 
+    --max-width: 700px;
 }
 html {
     padding: 10px;
     font-family: var(--body-font); 
 }
 body {
-    max-width: 900px;
+    max-width: var(--max-width);
     margin: 0px auto;
     box-shadow: 0px 0px 10px var(--drop-shadows);
 }
 main {
     padding: 40px;
     background-color: var(--secondary-bg);
-    color: var(--primary-fg);
+    color: var(--secondary-fg);
 }
 main h2,h3,h4 {
-    color: var(--primary-fg);
+    color: var(--secondary-fg);
 }
 h1,h2,h3,h4 {
     font-family: var(--heading-font);
