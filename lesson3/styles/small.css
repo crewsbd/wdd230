@@ -29,6 +29,7 @@ main {
 }
 main h2,h3,h4 {
     color: var(--secondary-fg);
+    filter: brightness(150%);
 }
 h1,h2,h3,h4 {
     font-family: var(--heading-font);
