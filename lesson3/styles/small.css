@@ -99,6 +99,9 @@ footer {
     display: flex;
     padding: 15px 40px;
 }
+footer a {
+    filter: brightness(80%);
+}
 @keyframes glowing-text {
     from    {   color: var(--primary-fg);
                 filter: brightness(100%);}
