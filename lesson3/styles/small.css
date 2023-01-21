@@ -98,6 +98,8 @@ footer {
     color: var(--primary-fg);
     display: flex;
     padding: 15px 40px;
+    font-size: 70%;
+    justify-content: center;
 }
 footer a {
     filter: brightness(80%);

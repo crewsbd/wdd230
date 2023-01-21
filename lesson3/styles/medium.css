@@ -20,6 +20,9 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    footer {
+        font-size: 100%;
+    }
     #logo {
         width: 120px;
         align-self: center;
