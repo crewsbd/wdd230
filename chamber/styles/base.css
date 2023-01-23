@@ -27,18 +27,26 @@ body {
     background-color: rgb(202, 162, 162);
     max-width: var(--max-width);
     margin: 0 auto;
+    border: 0;
     font-family: var(--body-font);
     background-color: var(--primary-bg);
     color: var(--primary-fg);
 }
 
 header {
+    background-image: url(../images/background1.jpg);
+    background-size:cover;
+    border: 0;
+}
+header div.header-gradient {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: var(--heading-font);
+    border: 0px;
+    background-image: linear-gradient(180deg, var(--primary-bg), rgba(200, 220, 248, .5) );
+    margin: 0;
     padding: 20px;
-    border: 0 solid transparent;
 }
 header img {
     width: 20%;
@@ -49,6 +57,7 @@ header h1 {
     margin: 0 .5em;
     padding: 0;
     text-align: center;
+    text-shadow: 0 0 4px rgba(200, 220, 248,1);
 }
 header div#current-date {
     text-align: center;
@@ -107,7 +116,6 @@ a:hover {
 }
 ul.social {
     width: 40px;
-    margin-left: 20px;
 }
 #burger-button {
     padding: 5px 5px;
