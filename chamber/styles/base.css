@@ -7,15 +7,15 @@
     --secondary-fg: rgb(66, 97, 135);
     --secondary-bg: rgb(253, 253, 239);
     --pop-color: rgb(166,99,23);
+    --menu-bg: rgba(211,227,250,.9);
     --white-bump: rgba(255,255,255,.2);
     --drop-shadows: rgba(0,0,0, .2);
     --body-font: 'Open Sans', sans-serif;
     --heading-font: 'Oswald', sans-serif; 
     --max-width: 700px; 
 }
-
 * {
-    /* border: 1px solid rgba(255, 0, 0, 0.141); */
+    border: 1px solid rgba(255, 0, 0, 0);
 }
 html {
     margin: 0px;
@@ -40,7 +40,7 @@ header {
     padding: 20px;
 }
 header img {
-    width: 55%;
+    width: 20%;
     height: auto;
 }
 header h1 {
@@ -53,28 +53,31 @@ header div#current-date {
 }
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 10px 20px;
     margin: 0;
     position: sticky;
     top: 0px;
     left: 0px;
-    background-color: var(--white-bump);
+    background-color: var(--menu-bg);
     backdrop-filter: blur(10px);
     font-weight:900;
     border-bottom: 10px solid rgba(255,255,255,.7);
 }
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 nav ul li {
-    padding: 5px 0;
+    padding: 10px 0;
 }
 nav ul li a {
     width: 100%;
+    padding: 10px 0px;
     text-decoration: none;
+    text-align: left;
 }
 main {
     overflow: hidden;
@@ -92,11 +95,10 @@ h1, h2, h3, h4 {
 a {
     color: var(--primary-fg);
     filter: brightness(110%);
-    width: 100%;
 }
 a:hover {
     filter: brightness(140%);
-    backdrop-filter: brightness(140%);
+    background-color: var(--white-bump);
 }
 header div.current-date {
     filter: hue-rotate(-90deg);
@@ -107,16 +109,31 @@ ul.social {
 }
 #burger-button {
     padding: 5px 5px;
-    background-color: rgba(255,255,255,.7)
 }
-.hidden {
-    display: none;
-}
+
 .left-float {
     float: left;
     margin: 10px 20px 10px 0;
+    width: 33%;
+    height: auto;
 }
 .right-float {
     float: right;
     margin: 10px 0 10px 20px;
+    width: 30%;
+    height: auto;
+}
+.burger-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.burger-flex ul:nth-child(1) {
+    flex-basis: 100%;
+}
+.burger-flex ul:nth-child(2) {
+    flex-basis: auto;
+}
+.hidden {
+    display: none;
 }
