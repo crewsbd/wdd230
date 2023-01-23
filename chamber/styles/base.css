@@ -1,6 +1,19 @@
+/*  font-family: 'Open Sans', sans-serif;   Paragraph
+    font-family: 'Oswald', sans-serif;      Heading*/
+
 :root {
-    --max-width: 60em;
+    --primary-bg: rgb(200, 220, 248);
+    --primary-fg: rgb(73, 103, 44);
+    --secondary-fg: rgb(66, 97, 135);
+    --secondary-bg: rgb(253, 253, 239);
+    --pop-color: rgb(166,99,23);
+    --white-bump: rgba(255,255,255,.2);
+    --drop-shadows: rgba(0,0,0, .2);
+    --body-font: 'Open Sans', sans-serif;
+    --heading-font: 'Oswald', sans-serif; 
+    --max-width: 700px; 
 }
+
 * {
     border: 1px solid red;
 }
@@ -14,36 +27,48 @@ body {
     background-color: rgb(202, 162, 162);
     max-width: var(--max-width);
     margin: 0 auto;
+    font-family: var(--body-font);
+    background-color: var(--primary-bg);
+    color: var(--primary-fg);
 }
 
 header {
-    background-color: red;
+    font-family: var(--heading-font);
+    padding: 20px;
 }
 header h1 {
     margin: 0;
     padding: 0;
 }
 nav {
-    background-color: orange;
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
     position: sticky;
     top: 0px;
     left: 0px;
+
 }
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+nav ul li a {
+    width: 100%;
+}
 main {
-    background-color: green;
     overflow: hidden;
+    background-color: var(--secondary-bg);
+    color: var(--secondary-fg);
+    padding: 0 20px;
 }
 main img {
     float: left;
 }
 footer {
-    background-color: blue;
     text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
 }
