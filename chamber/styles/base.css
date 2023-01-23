@@ -15,7 +15,7 @@
 }
 
 * {
-    border: 1px solid rgba(255, 0, 0, 0.141);
+    /* border: 1px solid rgba(255, 0, 0, 0.141); */
 }
 html {
     margin: 0px;
@@ -46,9 +46,15 @@ header img {
 header h1 {
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+header div#current-date {
+    text-align: center;
 }
 nav {
-    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
     margin: 0;
     position: sticky;
     top: 0px;
@@ -56,25 +62,25 @@ nav {
     background-color: var(--white-bump);
     backdrop-filter: blur(10px);
     font-weight:900;
+    border-bottom: 10px solid rgba(255,255,255,.7);
 }
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+nav ul li {
+    padding: 5px 0;
+}
 nav ul li a {
     width: 100%;
+    text-decoration: none;
 }
 main {
     overflow: hidden;
     background-color: var(--secondary-bg);
     color: var(--secondary-fg);
     padding: 0 20px;
-}
-main img {
-    float: left;
-    width: 33%;
-    height: auto;
 }
 footer {
     text-align: center;
@@ -89,6 +95,28 @@ a {
     width: 100%;
 }
 a:hover {
-    filter: brightness(200%);
+    filter: brightness(140%);
     backdrop-filter: brightness(140%);
+}
+header div.current-date {
+    filter: hue-rotate(-90deg);
+}
+ul.social {
+    width: 40px;
+    margin-left: 20px;
+}
+#burger-button {
+    padding: 5px 5px;
+    background-color: rgba(255,255,255,.7)
+}
+.hidden {
+    display: none;
+}
+.left-float {
+    float: left;
+    margin: 10px 20px 10px 0;
+}
+.right-float {
+    float: right;
+    margin: 10px 0 10px 20px;
 }
