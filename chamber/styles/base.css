@@ -1,0 +1,49 @@
+:root {
+    --max-width: 60em;
+}
+* {
+    border: 1px solid red;
+}
+html {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(143, 136, 136);
+    color: white;
+}
+body {
+    background-color: rgb(202, 162, 162);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+header {
+    background-color: red;
+}
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: orange;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+main {
+    background-color: green;
+    overflow: hidden;
+}
+main img {
+    float: left;
+}
+footer {
+    background-color: blue;
+    text-align: center;
+}
