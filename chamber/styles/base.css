@@ -12,7 +12,7 @@
     --drop-shadows: rgba(0,0,0, .2);
     --body-font: 'Open Sans', sans-serif;
     --heading-font: 'Oswald', sans-serif; 
-    --max-width: 700px; 
+    --max-width: 50em; 
 }
 * {
     border: 1px solid rgba(255, 0, 0, 0);
@@ -38,18 +38,22 @@ header {
     align-items: center;
     font-family: var(--heading-font);
     padding: 20px;
+    border: 0 solid transparent;
 }
 header img {
     width: 20%;
     height: auto;
+    border: 0 solid transparent;
 }
 header h1 {
-    margin: 0;
+    margin: 0 .5em;
     padding: 0;
     text-align: center;
 }
 header div#current-date {
     text-align: center;
+    filter: hue-rotate(-90deg);
+    font-size: .4em;
 }
 nav {
     display: flex;
@@ -60,7 +64,7 @@ nav {
     top: 0px;
     left: 0px;
     background-color: var(--menu-bg);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
     font-weight:900;
     border-bottom: 10px solid rgba(255,255,255,.7);
 }
@@ -87,6 +91,7 @@ main {
 }
 footer {
     text-align: center;
+    padding: 20px;
 }
 
 h1, h2, h3, h4 {
@@ -99,9 +104,6 @@ a {
 a:hover {
     filter: brightness(140%);
     background-color: var(--white-bump);
-}
-header div.current-date {
-    filter: hue-rotate(-90deg);
 }
 ul.social {
     width: 40px;
@@ -116,12 +118,18 @@ ul.social {
     margin: 10px 20px 10px 0;
     width: 33%;
     height: auto;
+    border-radius: .5em;
+    background-color: var(--drop-shadows);
+    box-shadow: .5em .5em .5em var(--drop-shadows);
 }
 .right-float {
     float: right;
     margin: 10px 0 10px 20px;
     width: 30%;
     height: auto;
+    border-radius: .5em;
+    background-color: var(--drop-shadows);
+    box-shadow: .5em .5em .5em var(--drop-shadows);
 }
 .burger-flex {
     display: flex;
