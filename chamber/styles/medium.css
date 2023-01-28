@@ -32,6 +32,21 @@
     }
     footer {
         font-size: 1em;
+        display: grid;
+        grid-template-columns: min-content auto;
+        column-gap: 1em;
+    }
+    footer img {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    footer div.contact-info {
+        grid-column: 2/3;
+        text-align: center;
+    }
+    footer div.author {
+        grid-column: 2/3;
+        text-align: center;
     }
     .hero, .news, .spotlights .event, .weather .join {
         box-sizing: border-box;
