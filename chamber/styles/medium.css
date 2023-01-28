@@ -67,6 +67,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 1em;
         box-sizing: border-box;
+        aspect-ratio: 3/1;
     }
     .join {
         display: block;
