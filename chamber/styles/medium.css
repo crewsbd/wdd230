@@ -8,6 +8,9 @@
         overflow: hidden;
         border-radius: 4px 4px 0 0;
     }
+    header img {
+        width: 6em;
+    }
     header div.banner {
         flex-direction: row;
         align-items: flex-end;
@@ -16,6 +19,7 @@
         overflow: hidden;
     }
     header h1 {
+        font-size: 1.8em;
         text-align: left;
     }
 
@@ -26,7 +30,9 @@
         width: 100%;
         gap: 1em;
     }
-
+    footer {
+        font-size: 1em;
+    }
     .hero, .news, .spotlights .event, .weather .join {
         box-sizing: border-box;
     }
