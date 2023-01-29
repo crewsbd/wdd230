@@ -121,3 +121,7 @@ footer a {
     display: inline;
     width: 40%;
 }
+.full-image {
+    width: 50%;
+    aspect-ratio: 1/1;
+}
