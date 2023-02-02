@@ -190,7 +190,11 @@ ul.social img {
 
 }
 .hero {
+    display: grid;
     background-image:  linear-gradient(0deg, var(--secondary-bg), rgba(253, 253, 239, 0.5)), url(https://loremflickr.com/700/400/money,chamber,commerce);
+    padding: 0;
+    aspect-ratio: 4/3;
+    text-shadow: 0 0 5px black;
 }
 .news {
     background-image:  linear-gradient(0deg, var(--secondary-bg), rgba(253, 253, 239, 0.5)), url(https://loremflickr.com/700/400/news,commerce);
@@ -208,6 +212,20 @@ ul.social img {
     aspect-ratio:unset;
 }
    
+.hero video {
+    width: 100%;
+    border: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+.hero h2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+    color: rgb(193, 207, 211);
+}
 
 .spotlight1, .spotlight2, .spotlight3 {
     background-color: var(--secondary-bg);
