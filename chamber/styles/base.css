@@ -16,6 +16,7 @@
 }
 * {
     border: 0px solid rgba(255, 0, 0, 0);
+    box-sizing: border-box;
 }
 html {
     margin: 0px;
@@ -41,7 +42,8 @@ header {
     transition: 1s;
     z-index: 1;
 }
-header div.banner {
+.banner {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,20 +53,19 @@ header div.banner {
     margin: 0;
     padding: 20px;
 }
-header img {
+header > div > img {
     width: 3em;
     aspect-ratio: 1/1;
     height: auto;
-    border: 0 solid transparent;
 }
-header h1 {
+header > div > h1 {
     margin: 0 .5em;
     padding: 0;
     text-align: center;
     font-size: 1.5em;
     text-shadow: 0 0 4px rgba(200, 220, 248,1);
 }
-header div#current-date {
+#current-date {
     text-align: center;
     filter: hue-rotate(-90deg);
     font-size: 1em;
@@ -116,25 +117,22 @@ nav {
 }
 #burger-menu > ul > li {
     padding: 0 0;
+
 }
 #burger-menu > ul > li > a {
-    width: 100%;
-    padding: 10px 0px;
+
     text-decoration: none;
-    text-align: left;
-}
-#burger-menu ul:nth-child(1) {
-    flex-basis: 100%;
-}
-#burger-menu ul:nth-child(2) {
-    flex-basis: auto;
+
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
 }
 
 
 
 main {
     overflow: hidden;
-    /* position: relative; */
+
     background-color: var(--secondary-bg);
     color: var(--secondary-fg);
     padding: 1em 1em;
@@ -158,7 +156,7 @@ footer div.contact-info {
     border: 2px solid rgba(0,0,0, .03);
     padding: 10px;
 }
-footer div.author {
+.author {
     text-align: center;
 }
 
@@ -177,12 +175,7 @@ a:hover {
     filter: brightness(140%);
     background-color: var(--white-bump);
 }
-ul.social {
-    width: 40px;
-}
-ul.social img {
-    width: 40px;
-}
+
 
 .left-float {
     float: left;
@@ -215,6 +208,7 @@ ul.social img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-sizing: border-box;
 
 }
 .hero {
@@ -268,6 +262,8 @@ ul.social img {
 .join {
     display: none;
 }
+
+/* Javascript classes */
 .banner.menu-pinned {
     display: none;
 }

@@ -10,32 +10,35 @@
         display: flex;
         flex-direction: row;
     }
-    .burger-flex {
+    #burger-menu {
         width: 100%;
+        max-width: none;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        top: 0;
     }
-    .burger-flex ul:nth-child(1) {
+    #burger-menu > ul:nth-child(1) {
         display: flex;
         flex-direction: row;
-        align-items: flex-end;
+        width: auto;
+
     }
-    .burger-flex ul:nth-child(2) {
+    #burger-menu > ul:nth-child(2) {
         display: flex;
         flex-direction: row;
-        width: 80px
+        width: auto;
+
     }
-    .burger-flex li {
+    #burger-menu li {
         padding-left: 10px;
         padding-right: 10px;
     }
-    ul.social li {
-        padding: 0;
-    }
-    #burger-open, #burger-close {
+    #burger-button {
         display: none;
     }
+
 
     main {
         grid-template-columns: 1fr 2fr 1fr;
