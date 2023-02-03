@@ -15,7 +15,7 @@
     --max-width: 60em; 
 }
 * {
-    border: 1px solid rgba(255, 0, 0, 0);
+    border: 0px solid rgba(255, 0, 0, 0);
 }
 html {
     margin: 0px;
@@ -39,6 +39,7 @@ header {
     top: -110px;  /*Best I can come up with given nav location requirement */
     left: 0px;
     transition: 1s;
+    z-index: 1;
 }
 header div.banner {
     display: flex;
@@ -70,6 +71,9 @@ header div#current-date {
 }
 nav {
     display: flex;
+    position: relative;
+    box-sizing: border-box;
+    top: 0;
     flex-direction: column;
     padding: 10px 20px;
     margin: 0;
@@ -77,29 +81,67 @@ nav {
     backdrop-filter: blur(3px);
     font-weight:900;
     border-bottom: 10px solid rgba(255,255,255,.7);
+    z-index: 1;
+    height: 70px;
 }
-nav ul {
+
+#burger-button {
+    padding: 5px 5px;
+    z-index: 500;
+    width: min-content;
+}
+#burger-button img {
+    height: 30px;
+    width: 30px;
+}
+#burger-menu {
+    position: relative;
+    top: 17px;
+    left: 0px;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: var(--menu-bg);
+    z-index: 3;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+#burger-menu > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
-nav ul li {
-    padding: 10px 0;
+#burger-menu > ul > li {
+    padding: 0 0;
 }
-nav ul li a {
+#burger-menu > ul > li > a {
     width: 100%;
     padding: 10px 0px;
     text-decoration: none;
     text-align: left;
 }
+#burger-menu ul:nth-child(1) {
+    flex-basis: 100%;
+}
+#burger-menu ul:nth-child(2) {
+    flex-basis: auto;
+}
+
+
+
 main {
     overflow: hidden;
+    /* position: relative; */
     background-color: var(--secondary-bg);
     color: var(--secondary-fg);
     padding: 1em 1em;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    z-index: 0;
 }
 footer {
     display: flex;
@@ -120,6 +162,10 @@ footer div.author {
     text-align: center;
 }
 
+
+
+
+
 h1, h2, h3, h4 {
     font-family: var(--heading-font);
 }
@@ -137,9 +183,7 @@ ul.social {
 ul.social img {
     width: 40px;
 }
-#burger-button {
-    padding: 5px 5px;
-}
+
 .left-float {
     float: left;
     margin: 10px 20px 10px 0;
@@ -158,24 +202,8 @@ ul.social img {
     background-color: var(--drop-shadows);
     box-shadow: .5em .5em .5em var(--drop-shadows);
 }
-.burger-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.burger-flex ul:nth-child(1) {
-    flex-basis: 100%;
-}
-.burger-flex ul:nth-child(2) {
-    flex-basis: auto;
-}
-#burger-button img {
-    height: 30px;
-    width: 30px;
-}
-.hidden {
-    display: none;
-}
+
+
 .hero, .event, .weather, .news, .spotlights, .join  {
     background-color: rgba(0,0,0, .03);
     text-shadow: 0 0 5px var(--secondary-bg);
@@ -195,6 +223,7 @@ ul.social img {
     padding: 0;
     aspect-ratio: 4/3;
     text-shadow: 0 0 5px black;
+    z-index: 0;
 }
 .news {
     background-image:  linear-gradient(0deg, var(--secondary-bg), rgba(253, 253, 239, 0.5)), url(https://loremflickr.com/700/400/news,commerce);
@@ -203,7 +232,7 @@ ul.social img {
     background-image:  linear-gradient(0deg, var(--secondary-bg), rgba(253, 253, 239, 0.5)), url(https://loremflickr.com/700/400/join,membership);
 }
 .event {
-    background-image:  linear-gradient(0deg, var(--secondary-bg), rgba(253, 253, 239, 0.5)), url(https://loremflickr.com/700/400/event,commerce);
+    background-image:  linear-gradient(180deg, rgba(253, 253, 239, 0.8) 35%,rgba(253, 253, 239, 0.0) 50%, rgba(253, 253, 239, 0.0)), url(../images/event_wax_bg.jpg);
 }
 .weather {
     background-image:  linear-gradient(0deg, var(--secondary-bg), rgba(253, 253, 239, 0.5)), url(https://loremflickr.com/700/400/weather,clouds);
@@ -241,4 +270,10 @@ ul.social img {
 }
 .banner.menu-pinned {
     display: none;
+}
+.hidden {
+    display: none;
+}
+.flex {
+    display: flex;
 }
