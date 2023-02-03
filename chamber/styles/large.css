@@ -38,6 +38,9 @@
     #burger-button {
         display: none;
     }
+    #menu-mask {
+        background-color: transparent;
+    }
 
 
     main {
