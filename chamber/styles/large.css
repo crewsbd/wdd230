@@ -78,6 +78,8 @@
         grid-template-columns: none;
         grid-row: 1/4;
         aspect-ratio: unset;
+        gap: unset;
+        align-content: space-between;        
     }
     .spotlight1{
         grid-column: 1/2;
@@ -88,6 +90,10 @@
     .spotlight3 {
         display: block;
         grid-column: 1/2;
+    }
+    .spotlight1, .spotlight2, .spotlight3 {
+        aspect-ratio: 1;
+        align-self: center;
     }
 
 }

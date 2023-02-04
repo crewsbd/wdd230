@@ -247,14 +247,14 @@ a:hover {
     background-image: linear-gradient(180deg, rgba(253, 253, 239, 0.8) 35%,rgba(253, 253, 239, 0.0) 50%, rgba(253, 253, 239, 0.0)), url(../images/join_card_bg.jpg);
 }
 .event {
-    background-image: linear-gradient(180deg, rgba(253, 253, 239, 0.8) 35%,rgba(253, 253, 239, 0.0) 50%, rgba(253, 253, 239, 0.0)), url(../images/event_wax_bg.jpg);
+    background-image: linear-gradient(180deg, rgba(253, 253, 239, 0.8) 40%,rgba(253, 253, 239, 0.0) 70%, rgba(253, 253, 239, 0.0)), url(../images/event_wax_bg.jpg);
 }
 
 .weather {
     background-image:  linear-gradient(180deg, rgba(253, 253, 239, 0.8) 35%,rgba(253, 253, 239, 0.0) 50%, rgba(253, 253, 239, 0.0)), url(../images/weather_clouds_bg.jpg);
 }
 
-.news > h2, .event > h2, .weather > h2 {
+.news > h2, .event > h2, .weather > h2, .spotlight1 > h2,.spotlight2 > h2,.spotlight3 > h2 {
     margin: 0;
     margin-bottom: .5em;
 }
@@ -309,7 +309,22 @@ a:hover {
     aspect-ratio: 3/1;
     padding: 1em;
 }
+.spotlight1 {
+    background-image: linear-gradient(180deg, rgba(253, 253, 239, 0.8) 40%,rgba(253, 253, 239, 0.0) 80%, rgba(253, 253, 239, 0.0)), url(../images/spotlight_garbage_bg.jpg);
+    background-size: cover;
+    background-position-y: center;
+    aspect-ratio: 1;
+}
+.spotlight2 {
+    background-image: linear-gradient(180deg, rgba(253, 253, 239, 0.8) 40%,rgba(253, 253, 239, 0.0) 80%, rgba(253, 253, 239, 0.0)), url(../images/spotlight_restaurant_bg.jpg);
+    background-size:cover;
+    background-position-y: center;
+
+}
 .spotlight3 {
+    background-image: linear-gradient(180deg, rgba(253, 253, 239, 0.8) 40%,rgba(253, 253, 239, 0.0) 80%, rgba(253, 253, 239, 0.0)), url(../images/spotlight_hub_bg.jpg);
+    background-size: cover;
+    background-position-y: center;
     display: none;
 }
 .join {
@@ -327,8 +342,10 @@ a:hover {
     display: flex;
 }
 .alert {
+    font-size: 1.5em;
     overflow: hidden;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
     height: 1.2em;
@@ -338,12 +355,16 @@ a:hover {
     width: 100%;
     border-radius: 4px 4px 0 0;
 }
-.alert > img {
+.alert > button {
     width: fit-content;
+    padding: 0;
+    margin: 0;
+    border-radius: 2em;
 }
 .alert > span {
     margin: 0 1em;
 }
+
 
 .content-button {
     background-color: var(--primary-bg);
