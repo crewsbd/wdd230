@@ -18,6 +18,7 @@
         justify-content: space-between;
         align-items: center;
         top: 0;
+        background-color: unset;
     }
     #burger-menu > ul:nth-child(1) {
         display: flex;
@@ -39,8 +40,9 @@
         display: none;
     }
     #menu-mask {
-        background-color: transparent;
+        z-index: -1;
     }
+
 
 
     main {

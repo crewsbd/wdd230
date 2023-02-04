@@ -111,10 +111,10 @@ nav {
     padding: 10px;
     justify-content: space-between;
     background-color: var(--menu-bg);
-    z-index: -600;
     border-radius: 0px 0px 10px 10px;
     animation-name: menu-slide-in;
     animation-duration: .5s;
+    z-index: -1;
 }
 #burger-menu > ul {
     display: flex;
@@ -221,7 +221,7 @@ a:hover {
 .hero, .event, .weather, .news, .spotlights, .join  {
     background-color: rgba(0,0,0, .03);
     text-shadow: 0 0 5px var(--secondary-bg);
-    aspect-ratio: 3/1;
+    aspect-ratio: 19/9;
     padding: 1em;
     border-radius: .5em;
     overflow: hidden;
@@ -241,17 +241,27 @@ a:hover {
     z-index: 0;
 }
 .news {
-    background-image:  linear-gradient(0deg, var(--secondary-bg), rgba(253, 253, 239, 0.5)), url(https://loremflickr.com/700/400/news,commerce);
+    background-image:  linear-gradient(180deg, rgba(253, 253, 239, 0.8) 35%,rgba(253, 253, 239, 0.0) 50%, rgba(253, 253, 239, 0.0)), url(../images/news_ev_bg.jpg);
 }
 .join {
-    background-image:  linear-gradient(0deg, var(--secondary-bg), rgba(253, 253, 239, 0.5)), url(https://loremflickr.com/700/400/join,membership);
+    background-image: linear-gradient(180deg, rgba(253, 253, 239, 0.8) 35%,rgba(253, 253, 239, 0.0) 50%, rgba(253, 253, 239, 0.0)), url(../images/join_card_bg.jpg);
 }
 .event {
-    background-image:  linear-gradient(180deg, rgba(253, 253, 239, 0.8) 35%,rgba(253, 253, 239, 0.0) 50%, rgba(253, 253, 239, 0.0)), url(../images/event_wax_bg.jpg);
+    background-image: linear-gradient(180deg, rgba(253, 253, 239, 0.8) 35%,rgba(253, 253, 239, 0.0) 50%, rgba(253, 253, 239, 0.0)), url(../images/event_wax_bg.jpg);
 }
+
 .weather {
-    background-image:  linear-gradient(0deg, var(--secondary-bg), rgba(253, 253, 239, 0.5)), url(https://loremflickr.com/700/400/weather,clouds);
+    background-image:  linear-gradient(180deg, rgba(253, 253, 239, 0.8) 35%,rgba(253, 253, 239, 0.0) 50%, rgba(253, 253, 239, 0.0)), url(../images/weather_clouds_bg.jpg);
 }
+
+.news > h2, .event > h2, .weather > h2 {
+    margin: 0;
+    margin-bottom: .5em;
+}
+.news > p, .event > p, .weather > p {
+    margin: 0;
+}
+
 .spotlights {
     aspect-ratio:unset;
 }
@@ -275,14 +285,22 @@ a:hover {
     height: 20%;
     margin: 0;
 }
-.hero div {
+.hero > .content-button {
     grid-row: 1/2;
     grid-column: 1/2;
     align-self: center;
     justify-self: center;
-    background-color: var(--secondary-bg);
-    padding: 1em;
-    border-radius: 1em;
+    
+}
+.join > p {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.join > .content-button {
+    align-self: center;
+    justify-self: center;
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
 
 .spotlight1, .spotlight2, .spotlight3 {
@@ -308,15 +326,29 @@ a:hover {
 .flex {
     display: flex;
 }
+
+.content-button {
+    background-color: var(--primary-bg);
+    color: var(--primary-fg);
+    padding: 1em;
+    border-radius: 1em;
+    text-shadow: 0 0 5px white;
+    width: min-content;
+}
+
 @keyframes menu-slide-in {
     from {  top: -180px; }
     to  { top: 17px;}
 }
 @keyframes shift-right {
-    from {  padding-left: 0; }
-    to  { padding-left: 10px;}
+    from {  padding-left: 0px;
+    padding-right:0px }
+    to  { padding-left: 10px;
+    padding-right: 10px;}
 }
 @keyframes return-left {
-    from {  padding-left: 10px; }
-    to  { padding-left: 0;}
+    from {  padding-left: 10px; 
+    padding-right: 10px;}
+    to  { padding-left: 0;
+    padding-right: 0;}
 }
