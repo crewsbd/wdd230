@@ -326,6 +326,24 @@ a:hover {
 .flex {
     display: flex;
 }
+.alert {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 1.2em;
+    background-color: rgba(255,255,255, .5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+.alert > img {
+    width: fit-content;
+}
+.alert > span {
+    margin: 0 1em;
+}
 
 .content-button {
     background-color: var(--primary-bg);
