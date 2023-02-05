@@ -167,7 +167,6 @@ main {
 }
 #hero {
     display: grid;
-    background-image:  linear-gradient(0deg, var(--secondary-bg), rgba(253, 253, 239, 0.5)), url(https://loremflickr.com/700/400/money,chamber,commerce);
     padding: 0;
     aspect-ratio: 4/3;
     text-shadow: 0 0 5px black;
