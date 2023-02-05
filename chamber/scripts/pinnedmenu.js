@@ -1,3 +1,5 @@
+/* Not working yet */
+
 /* const body = document.querySelector("header");
 const observer = new IntersectionObserver( 
   ([event]) => { event.target.childNodes[1].classList.toggle("menu-pinned", event.intersectionRatio < 1); console.log(event.intersectionRatio)},

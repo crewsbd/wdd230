@@ -3,7 +3,6 @@ const buttonClose = document.getElementById("burger-close");
 const burgerMenu = document.getElementById("burger-menu");
 
 function toggleMenu() {
-    console.log("Click-eth-ed");
     burgerMenu.classList.toggle("hidden");
     
     if(burgerMenu.classList.contains("hidden")) {
