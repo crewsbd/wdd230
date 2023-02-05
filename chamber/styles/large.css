@@ -18,6 +18,7 @@
         justify-content: space-between;
         align-items: center;
         top: 0;
+        animation-name: none;
         background-color: unset;
     }
     #burger-menu > ul:nth-child(1) {
@@ -51,8 +52,9 @@
     #hero {
         grid-column: 2/3;
         grid-row: 1/3;
-        aspect-ratio: 4/3;
+        /*aspect-ratio: unset; */
     }
+
     #event {
         grid-column: 1/2;
         grid-row: 1/2;

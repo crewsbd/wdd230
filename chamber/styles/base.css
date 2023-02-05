@@ -1,6 +1,7 @@
 /*  font-family: 'Open Sans', sans-serif;   Paragraph
     font-family: 'Oswald', sans-serif;      Heading*/
 
+/* Low level stuff ******************************************/
 :root {
     --primary-bg: rgb(200, 220, 248);
     --primary-fg: rgb(73, 103, 44);
@@ -43,7 +44,7 @@ header {
     left: 0px;
     z-index: 2;
 }
-.banner {
+#banner {
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -79,7 +80,6 @@ nav {
     flex-direction: column;
     padding: 10px 20px;
     margin: 0;
-    /* background-color: var(--menu-bg); */
     backdrop-filter: blur(3px);
     font-weight:900;
     border-bottom: 10px solid rgba(255,255,255,.7);
@@ -164,8 +164,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* box-sizing: border-box; */
-
 }
 #hero {
     display: grid;
@@ -189,27 +187,21 @@ main {
 #weather {
     background-image:  radial-gradient(rgba(0,0,0,0) 70%, rgba(0,0,0,.1)),url(../images/weather_clouds_bg.jpg);
 }
-
-
 .join-button {
     align-self: center;
     justify-self: center;
     /*grid-row: 1/3;
     grid-column: 1/2; */
 }
-
-
 #spotlights {
     aspect-ratio:unset;
     padding: .5em;
 }
-   
 #hero video {
     width: 100%;
     border: 0;
     grid-column: 1/2;
     grid-row: 1/2;
-
 }
 #hero > h2 {
     grid-row: 1/2;
@@ -218,7 +210,7 @@ main {
     text-align: center;
     align-self:flex-end;
     color: rgb(243, 235, 224);
-    background-color: rgba(117, 117, 117, 0.534);
+    background-color: var(--drop-shadows);
     width: 100%;
     height: 20%;
     margin: 0;
@@ -229,19 +221,12 @@ main {
     grid-column: 1/2;
     align-self: center;
     justify-self: center;
-    z-index: 2;
-    
+    z-index: 2; 
 }
-
-
-/*.spotlight1, .spotlight2, .spotlight3*/
 #spotlights > * {
     background-color: var(--secondary-bg);
     box-shadow: 0 .1em .3em var(--drop-shadows);
 }
-
-
-/*.spotlight1 */
 #spotlights > *:nth-child(1) {
     background-image: url(../images/spotlight_garbage_bg.jpg);
     background-size: cover;
@@ -253,7 +238,6 @@ main {
     background-size:cover;
     background-position-y: center;
     aspect-ratio: 1;
-
 }
 #spotlights > *:nth-child(3) {
     background-image: url(../images/spotlight_hub_bg.jpg);
@@ -264,8 +248,28 @@ main {
 }
 
 
+/* FOOTER STUFF ************************************************/
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: .75em;
+    align-items: center;
+    row-gap: 20px;
+}
+footer div.contact-info {
+    text-align: center;
+    border-radius: 1em;
+    border: 2px solid rgba(0,0,0, .03);
+    padding: 10px;
+}
+#footer-logo {
+    width: 3em;
+}
+
+
 /* Javascript STUFF **********************************************/
-.banner.menu-pinned {
+#banner.menu-pinned {
     display: none;
 }
 .hidden {
@@ -299,23 +303,6 @@ main {
 }
 
 
-
-/* FOOTER STUFF ************************************************/
-footer {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    font-size: .75em;
-    align-items: center;
-    row-gap: 20px;
-}
-
-footer div.contact-info {
-    text-align: center;
-    border-radius: 1em;
-    border: 2px solid rgba(0,0,0, .03);
-    padding: 10px;
-}
 /* ELEMENT STYLING **************************************/
 h1, h2, h3, h4 {
     font-family: var(--heading-font);
@@ -328,6 +315,7 @@ a:hover {
     filter: brightness(140%);
     text-shadow: 0 0 10px rgba(255,255,255,1);
 }
+
 
 /* GENERAL USE CLASSES ***************************************/
 .author {
@@ -373,7 +361,6 @@ a:hover {
 }
 .gradient-backdrop > p {
     margin: 0;
-    padding-bottom: 1em;
 }
 
 
