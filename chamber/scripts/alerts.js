@@ -5,7 +5,6 @@ const dayOfTheWeek = [
     "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
 ];
 
-console.log(day);
 if(dayOfTheWeek[day] == "Monday" | dayOfTheWeek[day] == "Tuesday") {
     const alertBanner = document.createElement("div");
     alertBanner.innerHTML = '<span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>';
