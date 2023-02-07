@@ -22,7 +22,7 @@
 <body>
     <header>
         <div id="banner">
-            <img src="images/logo.svg" width=100 height=100 alt="Fremont chamber of commerce logo">
+            <img src="images/logo.webp" width=100 height=100 alt="Fremont chamber of commerce logo">
             <h1>Fremont Chamber of Commerce</h1>
             <div id="current-date">date</div>
         </div>
@@ -67,10 +67,17 @@
     </header>
     <main>
         <div id="hero">
+            <!--
             <video autoplay muted>
                 <source src="images/hills.mp4">
                 A video clip of cows in a field.
-            </video>
+            </video> -->
+            <img src="images/wdd230-org-small.webp" 
+                srcset="
+                    images/wdd230-org-medium.webp 990w,
+                    images/wdd230-org-large.webp 1000w,
+                    images/wdd230-org-small.webp 400w
+                    ">
             <h2>
                 Fremont loves hills. No, really!
             </h2>
@@ -85,7 +92,13 @@
         <div id="weather">
             <div class="gradient-backdrop">
                 <h2>Weather</h2>
-                <p>It's stupid hot yo.</p>
+            </div>
+            <div id="weather-display">
+                <img src="images/sun-cloud.svg" id="weather-icon">
+                <span id="temperature"></span>℉<hr>
+                <span id="weather-description">Partly Cloudy</span><hr>
+                Wind Speed: <span id="wind-speed">2.5km/h</span><hr>
+                Wind Chill: <span id="wind-chill">N/A</span>
             </div>
         </div>
         <div id="news">
@@ -123,7 +136,7 @@
 
     </main>
     <footer>
-        <img id="footer-logo" src="images/logo.svg" width="50" height="50" alt="Fremont chamber of commerce logo">
+        <img id="footer-logo" src="images/logo.webp" width="50" height="50" alt="Fremont chamber of commerce logo">
         <div class="contact-info"><a href="https://bit.ly/3ReznXd" target="_blank">39488 Stevenson Place, Suite 100,
                 Fremont, California 94539</a><br>
             Phone: 510/795.2244 | Fax: 510/795.2240 | fmtcc@fremontbusiness.com</div>
