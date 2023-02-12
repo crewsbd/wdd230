@@ -302,6 +302,7 @@ footer div.contact-info {
 }
 #footer-logo {
     width: 3em;
+    height: 3em;
     aspect-ratio: 1/1;
 }
 
