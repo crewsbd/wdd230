@@ -72,12 +72,11 @@
                 <source src="images/hills.mp4">
                 A video clip of cows in a field.
             </video> -->
-            <img src="images/wdd230-org-small.webp" 
-                srcset="
-                    images/wdd230-org-medium.webp 990w,
-                    images/wdd230-org-large.webp 1000w,
-                    images/wdd230-org-small.webp 400w
-                    ">
+            <picture>
+                <source media="(min-width: 63em)" srcset="images/wdd230-org-large.webp"> <!--These parent div isn't linear with viewport-->
+                <source media="(min-width: 28em)" srcset="images/wdd230-org-medium.webp"> 
+                <img src="images/wdd230-org-small.webp" alt="Cool people doing cool things.">
+            </picture>
             <h2>
                 Fremont loves hills. No, really!
             </h2>
@@ -94,11 +93,15 @@
                 <h2>Weather</h2>
             </div>
             <div id="weather-display">
-                <img src="images/weather-sunny.svg" id="weather-icon">
-                <span id="temperature"></span> ℉<hr>
-                <span id="weather-description">Partly Cloudy</span><hr>
-                Wind Speed: <span id="wind-speed">2.5</span> km/h<hr>
-                Wind Chill: <span id="wind-chill">N/A</span> ℉
+                <div>
+                    <img src="images/weather-sunny.svg" id="weather-icon" alt="Sunny icon">
+                    <span id="temperature"></span> ℉<hr>
+                    <span id="weather-description">Partly Cloudy</span><hr>
+                </div>
+                <div>
+                    Wind Speed: <span id="wind-speed">2.5</span> km/h<hr>
+                    Wind Chill: <span id="wind-chill">N/A</span> ℉
+                </div>
             </div>
         </div>
         <div id="news">
