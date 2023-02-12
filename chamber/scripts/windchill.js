@@ -2,7 +2,12 @@ let windSpeed = 3.1;
 let temperature = 49;
 
 function CalculateWindChill(speed, temp) {
-    return 35.74 + .621*temp - (35.75*speed**.16) + .4275*temp*speed**.16;
+    if (windSpeed > 3.0 & temperature <= 50) {
+        return 35.74 + .621 * temp - (35.75 * speed ** .16) + .4275 * temp * speed ** .16;
+    }
+    else {
+        return "N/A"
+    }
 }
 
 document.querySelector("#temperature").textContent = temperature;

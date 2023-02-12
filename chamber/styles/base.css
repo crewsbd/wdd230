@@ -174,12 +174,16 @@ main {
     z-index: 0;
 }
 /* #hero video  */
-#hero img {
+#hero picture {
     width: 100%;
     border: 0;
     grid-column: 1/2;
     grid-row: 1/2;
 }
+#hero > picture > img {
+    width: 100%;
+}
+
 #news {
    background-image: radial-gradient(rgba(0,0,0,0) 70%, rgba(0,0,0,.1)), url(../images/news_ev_bg_400.webp);
 }
@@ -206,6 +210,10 @@ main {
     background-color: var(--drop-shadows);
     border-radius: 5px;
 }
+#weather-display > div:nth-child(2) {
+    clear: both;
+}
+
 #weather-icon {
     width: 30%;
     float: left;
@@ -294,6 +302,8 @@ footer div.contact-info {
 }
 #footer-logo {
     width: 3em;
+    height: 3em;
+    aspect-ratio: 1/1;
 }
 
 
