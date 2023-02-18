@@ -352,7 +352,7 @@ main {
     order: 2;
     aspect-ratio: unset;
     height: min-content;
-    font-size: 0.7em;
+    /*font-size: 0.7em; */
 }
 
 #discovery {
