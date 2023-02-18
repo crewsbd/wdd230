@@ -155,15 +155,15 @@ nav {
 }
 
 #burger-menu>ul:first-child>li>a:hover {
-    animation-name: shift-right;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: padding-left 1s, padding-right 1s;
 }
 
 #burger-menu>ul:first-child>li>a {
-    animation-name: return-left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    padding-left: 0;
+    padding-right: 0;
+    transition: padding-left 1s, padding-right 1s;
 }
 
 /* MAIN STUFF**********************************************/
@@ -591,29 +591,6 @@ a:hover {
     }
 }
 
-@keyframes shift-right {
-    from {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    to {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-@keyframes return-left {
-    from {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    to {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
 
 
 /*Sandbox *******************************************************/
