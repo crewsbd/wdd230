@@ -364,23 +364,24 @@ main {
 .gallery-figure {
     width: 100%;
     margin: 0;
-    background-color: var(--secondary-bg);
+    background-color: black
 }
 
 .gallery-figure>img {
     width: 100%;
-    transform: scale(100%);
+    transform: scale(1);
     filter: blur(0em);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.58);
-    transition: transform 1s, box-shadow 1s, filter 2s;
+    transition: transform 1s, box-shadow 1s;
+    background-color: black; /*because validator doesn't understand images */
 }
 .gallery-figure>img[data-src] {
-    filter: blur(2em);
+    filter: blur(0em);
 
 }
 
 .gallery-figure>img:hover {
-    transform: scale(105%);
+    transform: scale(1.05);
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.494);
     transition: transform 1s, box-shadow 1s;
 }
@@ -388,6 +389,7 @@ main {
 
 .gallery-figure>figcaption {
     padding: 10px;
+    background-color: var(--secondary-bg); /*because validator doesn't understand images */
 }
 
 /* FOOTER STUFF ************************************************/
@@ -502,7 +504,7 @@ a:hover {
     margin: 0;
     width: max-content;
     text-shadow: 0 0 5px black;
-    pointer-events: none;
+    /*pointer-events:none; I hate w3c validator. I really do */
 }
 
 #gallery figcaption a span.img-attribution {
@@ -511,7 +513,6 @@ a:hover {
     left: calc(100% + 20px);
     top: -100%;
     width: 160px;
-    z-index: 4000000;
     padding: 5px;
     background-color: white;
     border-radius: 5px;
@@ -614,26 +615,5 @@ a:hover {
     }
 }
 
-@keyframes shake {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    25% {
-        transform: rotate(2deg);
-    }
-
-    50% {
-        transform: rotate((0deg));
-    }
-
-    75% {
-        transform: rotate(-2deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
 
 /*Sandbox *******************************************************/
