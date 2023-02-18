@@ -1,6 +1,8 @@
 @media only screen and (min-width: 28em) {
     body {
-        margin: 10px;
+        /* margin: 10px; */
+        margin-left: calc(auto + 10px);
+        margin-right: calc(auto + 10px);
         box-shadow: 0px 0px 8px var(--drop-shadows);
         border-radius: 4px;
     }
@@ -103,6 +105,9 @@
         grid-row: 5;
         aspect-ratio: unset;
         background-image: radial-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .1)), url(../images/weather_clouds_bg_500.webp);
+    }
+    #gallery {
+        grid-column: 1/3;
     }
 
     #spotlights>* {
