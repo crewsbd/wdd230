@@ -367,26 +367,20 @@ main {
     background-color: black
 }
 
-.gallery-figure>img {
+.gallery-figure>picture>img {
     width: 100%;
-    transform: scale(1);
     filter: blur(0em);
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.58);
-    transition: transform 1s, box-shadow 1s;
     background-color: black; /*because validator doesn't understand images */
 }
-.gallery-figure>img[data-src] {
+.gallery-figure>img {
+    width: 100%;
     filter: blur(0em);
+    background-color: black; /*because validator doesn't understand images */
+}
+.gallery-figure>picture>img[data-src] {
+    filter: blur(1em);
 
 }
-
-.gallery-figure>img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.494);
-    transition: transform 1s, box-shadow 1s;
-}
-
-
 .gallery-figure>figcaption {
     padding: 10px;
     background-color: var(--secondary-bg); /*because validator doesn't understand images */
@@ -500,14 +494,14 @@ a:hover {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0;
     width: max-content;
     text-shadow: 0 0 5px black;
     /*pointer-events:none; I hate w3c validator. I really do */
 }
 
-#gallery figcaption a span.img-attribution {
+#gallery figcaption a span.img-attribution { /*Attribution box */
     visibility: hidden;
     position: absolute;
     left: calc(100% + 20px);
