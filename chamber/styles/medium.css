@@ -142,4 +142,26 @@
         box-sizing: border-box;
         background-image: radial-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, .1)), url(../images/spotlight_hub_bg_500.webp);
     }
+    #join-form {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        align-items: start;
+        width: 100%;
+    }
+    #join-form form {
+        width: 50%;
+    }
+    form label {
+        width: 100%;
+    }
+    #join-form div#membership-level {
+        grid-column: 2/3;
+        position: absolute;
+        left: calc(100% + 10px);
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.44);
+        border-radius: 20px;
+    }
 }

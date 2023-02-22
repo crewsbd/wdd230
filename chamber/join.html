@@ -37,7 +37,7 @@
             <div id="burger-menu" class="hidden">
                 <ul>
                     <li>
-                        <a href="#" class="menu-selected">HOME</a>
+                        <a href="index.html">HOME</a>
                     </li>
                     <li>
                         <a href="discover.html">DISCOVERY</a>
@@ -46,7 +46,7 @@
                         <a href="#">DIRECTORY</a>
                     </li>
                     <li>
-                        <a href="join.html">JOIN</a>
+                        <a href="#" class="menu-selected">JOIN</a>
                     </li>
                     <li>
                         <a href="#">CONTACT</a>
@@ -67,7 +67,7 @@
     </header>
     <main>
         <div id="hero">
-            
+
             <video autoplay muted>
                 <source src="images/hills.mp4">
                 A video clip of cows in a field.
@@ -82,60 +82,36 @@
             </h2>
             <div class="join-button">JOIN</div>
         </div>
-        <div id="event">
+        <div id="join-form">
             <div class="gradient-backdrop">
-                <h2>Events</h2>
-                <p>WAX: It's the bee's knees! Ardenwood Historic Farm 1:00PM - 2:00PM Feb 04, 2023</p>
-            </div>
+                <form method="get" actition="thankyou.html">
+                    <label>First Name* <input type="text" name="firstname" required></label>
+                    <label>Last Name* <input type="text" name="lastname" required></label>
+                    <label>Business Position <input type="text" name="position" id="position" minlength="7" pattern="^[a-zA-Z- ]{7,}"></label>
+                    <label>Email* <input type="email" name="email" required placeholder="someone@domain.com"></label>
+                    <label>Cell Number* <input type="tel" name="phone" required minlength="4" maxlength="14"></label> 
+                    <label>Business Name* <input type="text" name="businessname" required></label>
+                    <div id="membership-level">
+                        This is a great membership level
+                    </div>
+                    <label>Membership Level*
+                        <select name="memberlevel">
+                            <option>Select A Level</option>
+                            <option value="nonprofit" value="NonProft">NP</option>
+                            <option value="bronze" value=>Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                    </label>
+                    <!-- four levels. Display benefits on large view. Show increasing cost -->
+                    <label>Business Description<textarea rows="7" cols="10"></textarea> </label>
+                    <input type="hidden" name="datetime">
+                    <input type="submit" name="submit">
+                </form>
+               
+            </div >
         </div>
-        <div id="weather">
-            <div class="gradient-backdrop">
-                <h2>Weather</h2>
-            </div>
-            <div id="weather-display">
-                <div>
-                    <img src="images/weather-sunny.svg" id="weather-icon" alt="Sunny icon">
-                    <span id="temperature"></span> ℉<hr>
-                    <span id="weather-description">Partly Cloudy</span><hr>
-                </div>
-                <div>
-                    Wind Speed: <span id="wind-speed">2.5</span> km/h<hr>
-                    Wind Chill: <span id="wind-chill">N/A</span> ℉
-                </div>
-            </div>
-        </div>
-        <div id="news">
-            <div class="gradient-backdrop">
-                <h2>News Release</h2>
-                <p>PG&E offering discounts on electric vehicles.</p>
-            </div>
-        </div>
-        <div id="spotlights">
-            <div class="spotlight1">
-                <div class="gradient-backdrop">
-                    <h2>Trash</h2>
-                    <p>There are people for that</p>
-                </div>
-            </div>
-            <div class="spotlight2">
-                <div class="gradient-backdrop">
-                    <h2>Restaurant Supplies</h2>
-                    <p>They have them.</p>
-                </div>
-            </div>
-            <div class="spotlight3">
-                <div class="gradient-backdrop">
-                    <h2>Fremont Hub </h2>
-                    <p>There are some stores around here.</p>
-                </div>
-            </div>
-        </div>
-        <div id="join">
-            <div class="gradient-backdrop">
-                <p>One of us. One of us.</p>
-            </div>
-            <div class="join-button">JOIN</div>
-        </div>
+
 
     </main>
     <footer>
@@ -152,6 +128,7 @@
     <script src="scripts/pinnedmenu.js"></script>
     <script src="scripts/alerts.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/validate.js"></script>
 </body>
 
 </html>

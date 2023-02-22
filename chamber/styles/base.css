@@ -186,8 +186,8 @@ main {
 #join,
 #gallery,
 #stats,
-#discovery {
-    aspect-ratio: 19/9;
+#discovery,
+#join-form {
     background-color: var(--drop-shadows);
     border-radius: 0.5em;
     overflow: hidden;
@@ -408,6 +408,51 @@ footer div.contact-info {
     height: 3em;
     aspect-ratio: 1/1;
 }
+/* Form style *************************************************/
+
+#join-form {
+    width: 100%;
+    align-items: center;
+    padding: 0px;
+    flex-direction: column;
+}
+#join-form .gradient-backdrop form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#join-form form {
+    position: relative;
+
+}
+form label {
+    padding: 0;
+    width: 100%;
+}
+form input,
+form select,
+form textarea {
+    display: block;
+    height: 44px;
+    border: 1px solid rgba(0, 0, 0, 0.107);
+    border-radius: 10px;
+    padding: 5px 15px 5px 10px;
+    width: 100%;
+}
+form textarea {
+    height: 5em;
+}
+form input::placeholder {
+    color: rgba(109, 142, 116, 0.391);
+}
+form input:valid {
+    background-color: rgb(255, 255, 255);
+}
+form input:not(:valid) {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
 
 /* Javascript STUFF **********************************************/
 #banner.menu-pinned {
@@ -557,6 +602,7 @@ a:hover {
             rgba(255, 255, 255, 0));
     margin: unset;
     height: fit-content;
+    width: 100%;
     text-shadow: 0 0 5px var(--secondary-bg);
     padding: 1em;
 }
@@ -572,6 +618,9 @@ a:hover {
 
 .small-text {
     font-size: 0.6em;
+}
+.menu-selected {
+    color: var(--pop-color)
 }
 
 /* KEYFRAMES ***********************************************/
