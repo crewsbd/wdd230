@@ -187,7 +187,8 @@ main {
 #gallery,
 #stats,
 #discovery,
-#join-form {
+#join-form,
+#member-benefits {
     background-color: var(--drop-shadows);
     border-radius: 0.5em;
     overflow: hidden;
