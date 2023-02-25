@@ -149,9 +149,18 @@
         width: 100%;
     }
     #join-form form {
-        width: 50%;
+        width: 100%;
     }
     form label {
         width: 100%;
+    }
+    #wide-hero {
+        grid-column: 1/3;
+    }
+    #join-form {
+        grid-column: 1/2;
+    }
+    #member-benefits {
+        grid-column: 2/3;
     }
 }

@@ -7,7 +7,8 @@
     --primary-fg: rgb(73, 103, 44);
     --secondary-fg: rgb(66, 97, 135);
     --secondary-bg: rgb(253, 253, 239);
-    --pop-color: rgb(166, 99, 23);
+    --pop-color: rgb(235, 125, 0);
+    /*--pop-color: rgb(166, 99, 23); */
     --menu-bg: rgba(211, 227, 250, 0.9);
     --white-bump: rgba(255, 255, 255, 0.2);
     --drop-shadows: rgba(0, 0, 0, 0.2);
@@ -188,7 +189,8 @@ main {
 #stats,
 #discovery,
 #join-form,
-#member-benefits {
+#member-benefits,
+#wide-hero {
     background-color: var(--drop-shadows);
     border-radius: 0.5em;
     overflow: hidden;
@@ -198,7 +200,8 @@ main {
     margin: 0px;
 }
 
-#hero {
+#hero,
+#wide-hero {
     display: grid;
     padding: 0;
     /*aspect-ratio: 4/3; */
@@ -209,7 +212,10 @@ main {
 }
 
 /* #hero video  */
-#hero picture, #hero video {
+#hero picture,
+#hero video,
+#hero img,
+#wide-hero img {
     width: 100%;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -289,7 +295,8 @@ main {
     padding: 0.5em;
 }
 
-#hero>h2 {
+#hero>h2,
+#wide-hero>h2 {
     grid-row: 1/2;
     grid-column: 1/2;
     justify-self: end;
@@ -303,7 +310,8 @@ main {
     z-index: 2;
 }
 
-#hero>.join-button {
+#hero>.join-button,
+#wide-hero>.join-button {
     grid-row: 1/2;
     grid-column: 1/2;
     align-self: center;
@@ -371,20 +379,26 @@ main {
 .gallery-figure>picture>img {
     width: 100%;
     filter: blur(0em);
-    background-color: black; /*because validator doesn't understand images */
+    background-color: black;
+    /*because validator doesn't understand images */
 }
+
 .gallery-figure>img {
     width: 100%;
     filter: blur(0em);
-    background-color: black; /*because validator doesn't understand images */
+    background-color: black;
+    /*because validator doesn't understand images */
 }
+
 .gallery-figure>picture>img[data-src] {
     filter: blur(1em);
 
 }
+
 .gallery-figure>figcaption {
     padding: 10px;
-    background-color: var(--secondary-bg); /*because validator doesn't understand images */
+    background-color: var(--secondary-bg);
+    /*because validator doesn't understand images */
 }
 
 /* FOOTER STUFF ************************************************/
@@ -409,6 +423,7 @@ footer div.contact-info {
     height: 3em;
     aspect-ratio: 1/1;
 }
+
 /* Form style *************************************************/
 
 #join-form {
@@ -417,19 +432,23 @@ footer div.contact-info {
     padding: 0px;
     flex-direction: column;
 }
+
 #join-form .gradient-backdrop form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
 #join-form form {
     position: relative;
 
 }
+
 form label {
     padding: 0;
     width: 100%;
 }
+
 form input,
 form select,
 form textarea {
@@ -439,21 +458,29 @@ form textarea {
     border-radius: 10px;
     padding: 5px 15px 5px 10px;
     width: 100%;
+
 }
+
 form textarea {
     height: 5em;
+    resize: vertical;
+    min-height: 4em;
+    max-height: 10em;
 }
+
 form input::placeholder {
     color: rgba(109, 142, 116, 0.391);
 }
+
 form input:valid {
     background-color: rgb(255, 255, 255);
 }
-form input:not(:valid) {
+
+form input:invalid {
     background-color: rgba(255, 255, 255, 0);
+    border-bottom-width: 5px;
+    border-bottom-color: var(--pop-color);
 }
-
-
 
 /* Javascript STUFF **********************************************/
 #banner.menu-pinned {
@@ -523,6 +550,45 @@ a:hover {
 }
 
 /* GENERAL USE CLASSES ***************************************/
+.gold,
+.silver,
+.bronze,
+.np {
+    padding: 5px 9px 5px 9px;
+    border: 3px solid #0000001d;
+    border-bottom-color: #00000044;
+    border-right-color: #00000044;
+    border-top-color: #ffffff44;
+    border-left-color: #ffffff44;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(61, 56, 56, 0.284);
+    width: max-content;
+    text-align: center;
+    color: black;
+    overflow-x: hidden;
+}
+
+.gold {
+    background-image: linear-gradient(to bottom, rgb(255, 159, 4), rgb(255, 246, 150), rgb(228, 227, 187));
+    background-color: gold;
+}
+
+.silver {
+    background-image: linear-gradient(to bottom, rgb(87, 87, 87), rgb(255, 255, 255));
+    background-color: silver;
+}
+
+.bronze {
+    background-image: linear-gradient(to bottom, rgb(84, 76, 57), rgb(247, 253, 225));
+    background-color: rgb(129, 104, 60);
+}
+
+.np {
+    background-color: rgb(224, 245, 255);
+}
+
 .author {
     text-align: center;
 }
@@ -547,7 +613,8 @@ a:hover {
     /*pointer-events:none; I hate w3c validator. I really do */
 }
 
-#gallery figcaption a span.img-attribution { /*Attribution box */
+#gallery figcaption a span.img-attribution {
+    /*Attribution box */
     visibility: hidden;
     position: absolute;
     left: calc(100% + 20px);
@@ -620,6 +687,7 @@ a:hover {
 .small-text {
     font-size: 0.6em;
 }
+
 .menu-selected {
     color: var(--pop-color)
 }

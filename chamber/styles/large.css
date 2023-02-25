@@ -121,14 +121,17 @@
     }
     #join-form {
         grid-column: 2/3;
-        grid-row: 3/4;
+        grid-row: 2/4;
     }
     #member-benefits {
         grid-column: 3/4;
-        grid-row: 3/4;
+        grid-row: 2/4;
     }
     #member-benefits div.gradient-backdrop {
 
+    }
+    #wide-hero {
+        grid-column: 1/4;
     }
 
 }

@@ -66,25 +66,21 @@
         </nav>
     </header>
     <main>
-        <div id="hero">
-
-            <video autoplay muted>
-                <source src="images/hills.mp4">
-                A video clip of cows in a field.
-            </video>
+        <div id="wide-hero">
+            <img src="images/hero_join_1200.webp">
             <h2>
-                Fremont loves hills. No, really!
+                Your gateway to Fremont Business
             </h2>
-            <div class="join-button">JOIN</div>
         </div>
         <div id="join-form">
             <div class="gradient-backdrop">
                 <form method="get" actition="thankyou.html">
                     <label>First Name* <input type="text" name="firstname" required></label>
                     <label>Last Name* <input type="text" name="lastname" required></label>
-                    <label>Business Position <input type="text" name="position" id="position" minlength="7" pattern="^[a-zA-Z- ]{7,}"></label>
+                    <label>Business Position <input type="text" name="position" id="position" minlength="7"
+                            pattern="^[a-zA-Z- ]{7,}"></label>
                     <label>Email* <input type="email" name="email" required placeholder="someone@domain.com"></label>
-                    <label>Cell Number* <input type="tel" name="phone" required minlength="4" maxlength="14"></label> 
+                    <label>Cell Number* <input type="tel" name="phone" required minlength="4" maxlength="14" pattern="[0-9.\-\(\) ]*"></label>
                     <label>Business Name* <input type="text" name="businessname" required></label>
                     <label>Membership Level*
                         <select name="memberlevel">
@@ -100,30 +96,31 @@
                     <input type="hidden" name="datetime">
                     <input type="submit" name="submit">
                 </form>
-            </div >
+            </div>
         </div>
         <div id="member-benefits">
             <div class="gradient-backdrop">
                 <h2>Member Benfits</h2>
-                <h3>Non-Profit:</h3> So good!
+                <h3 class="np">Non-Profit</h3> So good!
                 <ul>
                     <li>COST: $0</li>
                     <li>We put you on a mailing list and sell your data to facebook. You're welcome.</li>
                 </ul>
-                <h3>Bronze:</h3> Even more gooder
+                <h3 class="bronze">Bronze</h3> Even more gooder
                 <ul>
                     <li>COST: $200</li>
                     <li>Use our business search engine for find some contacts.</li>
                 </ul>
-                <h3>Silver:</h3> Are you kidding? Are you reading my mind? So great.
+                <h3 class="silver">Silver</h3> Are you kidding? Are you reading my mind? So great.
                 <ul>
                     <li>COST: $1,000</li>
                     <li>Everything above plus you can call our hotline.</li>
                 </ul>
-                <h3>Gold:</h3> You just won.  Everything. And you are my new best friend.
+                <h3 class="gold">Gold</h3> You just won. Everything. And you are my new best friend.
                 <ul>
                     <li>COST: $5,000</li>
-                    <li>You have my home phone at this tier. Call me while my family is eating. Need an interest free loan? I'll put my home up as collateral.</li>
+                    <li>You have my home phone at this tier. Call me while my family is eating. Need an interest free
+                        loan? I'll put my home up as collateral.</li>
                 </ul>
             </div>
         </div>
@@ -143,7 +140,6 @@
     <script src="scripts/burger.js"></script>
     <script src="scripts/pinnedmenu.js"></script>
     <script src="scripts/alerts.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/validate.js"></script>
 </body>
 
