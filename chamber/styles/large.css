@@ -133,5 +133,8 @@
     #wide-hero {
         grid-column: 1/4;
     }
+    #response {
+        grid-column: 2/3;
+    }
 
 }

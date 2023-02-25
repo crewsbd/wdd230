@@ -72,60 +72,11 @@
                 Your gateway to Fremont Business
             </h2>
         </div>
-        <div id="join-form">
+        <div id="response">
             <div class="gradient-backdrop">
-                <form method="get" action="thankyou.html">
-                    <label>First Name* <input type="text" name="firstname" required></label>
-                    <label>Last Name* <input type="text" name="lastname" required></label>
-                    <label>Business Position <input type="text" name="position" id="position" minlength="7"
-                            pattern="^[a-zA-Z- ]{7,}"></label>
-                    <label>Email* <input type="email" name="email" required placeholder="someone@domain.com"></label>
-                    <label>Cell Number* <input type="tel" name="phone" required minlength="4" maxlength="14" pattern="[0-9.\-\(\) ]*"></label>
-                    <label>Business Name* <input type="text" name="businessname" required></label>
-                    <label>Membership Level*
-                        <select name="memberlevel">
-                            <option>Select A Level</option>
-                            <option value="nonprofit" value="NonProft">NP</option>
-                            <option value="bronze" value=>Bronze</option>
-                            <option value="silver">Silver</option>
-                            <option value="gold">Gold</option>
-                        </select>
-                    </label>
-                    <!-- four levels. Display benefits on large view. Show increasing cost -->
-                    <label>Business Description<textarea rows="7" cols="10"></textarea> </label>
-                    <input type="hidden" name="datetime">
-                    <input type="submit" name="submit">
-                </form>
+                <span id="response-string"></span>
             </div>
         </div>
-        <div id="member-benefits">
-            <div class="gradient-backdrop">
-                <h2>Member Benfits</h2>
-                <h3 class="np">Non-Profit</h3> So good!
-                <ul>
-                    <li>COST: $0</li>
-                    <li>We put you on a mailing list and sell your data to facebook. You're welcome.</li>
-                </ul>
-                <h3 class="bronze">Bronze</h3> Even more gooder
-                <ul>
-                    <li>COST: $200</li>
-                    <li>Use our business search engine for find some contacts.</li>
-                </ul>
-                <h3 class="silver">Silver</h3> Are you kidding? Are you reading my mind? So great.
-                <ul>
-                    <li>COST: $1,000</li>
-                    <li>Everything above plus you can call our hotline.</li>
-                </ul>
-                <h3 class="gold">Gold</h3> You just won. Everything. And you are my new best friend.
-                <ul>
-                    <li>COST: $5,000</li>
-                    <li>You have my home phone at this tier. Call me while my family is eating. Need an interest free
-                        loan? I'll put my home up as collateral.</li>
-                </ul>
-            </div>
-        </div>
-
-
     </main>
     <footer>
         <img id="footer-logo" src="images/logo.webp" width="50" height="50" alt="Fremont chamber of commerce logo">
@@ -141,6 +92,7 @@
     <script src="scripts/pinnedmenu.js"></script>
     <script src="scripts/alerts.js"></script>
     <script src="scripts/validate.js"></script>
+    <script src="scripts/response.js"></script>
 </body>
 
 </html>

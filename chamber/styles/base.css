@@ -190,7 +190,8 @@ main {
 #discovery,
 #join-form,
 #member-benefits,
-#wide-hero {
+#wide-hero,
+#response {
     background-color: var(--drop-shadows);
     border-radius: 0.5em;
     overflow: hidden;
