@@ -191,7 +191,8 @@ main {
 #join-form,
 #member-benefits,
 #wide-hero,
-#response {
+#response,
+#join-greeting {
     background-color: var(--drop-shadows);
     border-radius: 0.5em;
     overflow: hidden;
@@ -216,7 +217,9 @@ main {
 #hero picture,
 #hero video,
 #hero img,
-#wide-hero img {
+#wide-hero img,
+#wide-hero picture,
+#wide-hero video {
     width: 100%;
     grid-column: 1/2;
     grid-row: 1/2;

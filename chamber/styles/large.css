@@ -43,9 +43,6 @@
     #menu-mask {
         z-index: -1;
     }
-
-
-
     main {
         grid-template-columns: 1fr 2fr 1fr;
     }
@@ -121,17 +118,17 @@
     }
     #join-form {
         grid-column: 2/3;
-        grid-row: 2/4;
+        grid-row: 2/3;
     }
     #member-benefits {
         grid-column: 3/4;
-        grid-row: 2/4;
-    }
-    #member-benefits div.gradient-backdrop {
-
+        grid-row: 2/3;
     }
     #wide-hero {
         grid-column: 1/4;
+    }
+    #join-greeting {
+        grid-column: 1/2;
     }
     #response {
         grid-column: 2/3;
