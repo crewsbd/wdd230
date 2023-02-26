@@ -94,8 +94,8 @@
                     <label>Cell Number* <input type="tel" name="phone" required minlength="4" maxlength="14" pattern="[0-9.\-\(\) ]*"></label>
                     <label>Business Name* <input type="text" name="businessname" required></label>
                     <label>Membership Level*
-                        <select name="memberlevel">
-                            <option>Select A Level</option>
+                        <select name="memberlevel" required>
+                            <option value="" disabled selected>Select A Level</option>
                             <option value="nonprofit">NP</option>
                             <option value="bronze">Bronze</option>
                             <option value="silver">Silver</option>
