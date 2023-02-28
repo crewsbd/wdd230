@@ -1,30 +1,38 @@
 body {
     margin: auto 0;
-    width: fit-content;
     padding: 1em;
     text-align: center;
 }
+
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(48, 69, 55)
+    color: rgb(48, 69, 55)
 }
 
-main > div.cards{
-    display: flex;
+main {
+    position: relative;
+}
+
+main>div.cards {
+    /*display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap; */
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    width: 100%;
     gap: 1em;
     background-color: rgba(0, 0, 0, 0.542);
-    padding: 1em;
+padding: 1em;
 }
-div.cards > section {
+
+div.cards>section {
     /*background-color: rgb(147, 141, 121); */
-    background-image: linear-gradient(to bottom, rgb(186, 187, 167),rgb(82, 78, 41));
+    background-image: linear-gradient(to bottom, rgb(186, 187, 167), rgb(82, 78, 41));
     background-repeat: no-repeat;
     padding: 2em;
     border-radius: 1em;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -40,17 +48,20 @@ div.cards > section {
     overflow: hidden;
     box-sizing: content-box;
 }
+
 section>h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(52, 37, 10);
     margin-top: 0;
     text-shadow: 1px 1px 1px white, -1px -1px 1px white, 0 0 8px white;
 }
+
 section>img {
     display: block;
     border-radius: .25em;
     margin-top: 1em;
 }
+
 section>div {
     text-shadow: 0 0 7px white;
 }
