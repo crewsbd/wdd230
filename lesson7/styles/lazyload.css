@@ -15,9 +15,9 @@ body {
 
 }
 img[data-src] {
-    filter: blur(0.2em);
+    filter: blur(0.4em);
 }
 img {
     filter: blur(0em);
-    transition: filter 0.5s;
+    transition: filter 4s;
 }

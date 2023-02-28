@@ -7,24 +7,28 @@
     --primary-fg: rgb(73, 103, 44);
     --secondary-fg: rgb(66, 97, 135);
     --secondary-bg: rgb(253, 253, 239);
-    --pop-color: rgb(166,99,23);
-    --menu-bg: rgba(211,227,250,.9);
-    --white-bump: rgba(255,255,255,.2);
-    --drop-shadows: rgba(0,0,0, .2);
-    --body-font: 'Open Sans', sans-serif;
-    --heading-font: 'Oswald', sans-serif; 
-    --max-width: 60em; 
+    --pop-color: rgb(235, 125, 0);
+    /*--pop-color: rgb(166, 99, 23); */
+    --menu-bg: rgba(211, 227, 250, 0.9);
+    --white-bump: rgba(255, 255, 255, 0.2);
+    --drop-shadows: rgba(0, 0, 0, 0.2);
+    --body-font: "Open Sans", sans-serif;
+    --heading-font: "Oswald", sans-serif;
+    --max-width: 73em;
 }
+
 * {
     border: 0px solid rgba(255, 0, 0, 0);
     box-sizing: border-box;
 }
+
 html {
     margin: 0px;
     padding: 0px;
     background-color: rgb(143, 136, 136);
     color: white;
 }
+
 body {
     background-color: rgb(202, 162, 162);
     max-width: var(--max-width);
@@ -40,10 +44,12 @@ header {
     background-size: cover;
     border: 0;
     position: sticky;
-    top: -110px;  /*Best I can come up with given nav location requirement */
+    top: -110px;
+    /*Best I can come up with given nav location requirement */
     left: 0px;
     z-index: 2;
 }
+
 #banner {
     overflow: hidden;
     display: flex;
@@ -51,27 +57,34 @@ header {
     align-items: center;
     font-family: var(--heading-font);
     border: 0px;
-    background-image: linear-gradient(180deg, var(--primary-bg), rgba(200, 220, 248, .5)),  url(../images/background1_500.webp);
+    background-image: linear-gradient(180deg,
+            var(--primary-bg),
+            rgba(200, 220, 248, 0.5)),
+        url(../images/background1_500.webp);
     margin: 0;
     padding: 20px;
 }
-header > div > img {
+
+header>div>img {
     width: 3em;
     aspect-ratio: 1/1;
     height: auto;
 }
-header > div > h1 {
-    margin: 0 .5em;
+
+header>div>h1 {
+    margin: 0 0.5em;
     padding: 0;
     text-align: center;
     font-size: 1.5em;
-    text-shadow: 0 0 4px rgba(200, 220, 248,1);
+    text-shadow: 0 0 4px rgba(200, 220, 248, 1);
 }
+
 #current-date {
     text-align: center;
     filter: hue-rotate(-90deg);
     font-size: 1em;
 }
+
 nav {
     display: flex;
     position: relative;
@@ -81,21 +94,25 @@ nav {
     padding: 10px 20px;
     margin: 0;
     backdrop-filter: blur(3px);
-    font-weight:900;
-    border-bottom: 10px solid rgba(255,255,255,.7);
+    font-weight: 900;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.7);
     height: 70px;
     z-index: -1;
 }
+
 #burger-button {
     padding: 5px 5px;
     z-index: 500;
     width: min-content;
 }
+
 #burger-button img {
     height: 30px;
     width: 30px;
 }
-#menu-mask { /*needed to hide sliding menu */
+
+#menu-mask {
+    /*needed to hide sliding menu */
     background-color: var(--menu-bg);
     width: 100%;
     height: 100%;
@@ -103,6 +120,7 @@ nav {
     top: 0;
     left: 0;
 }
+
 #burger-menu {
     position: relative;
     top: 17px;
@@ -113,10 +131,11 @@ nav {
     background-color: var(--menu-bg);
     border-radius: 0px 0px 10px 10px;
     animation-name: menu-slide-in;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     z-index: -1;
 }
-#burger-menu > ul {
+
+#burger-menu>ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -124,26 +143,29 @@ nav {
     padding: 0;
     margin: 0;
 }
-#burger-menu > ul > li {
+
+#burger-menu>ul>li {
     padding: 0 0;
 }
-#burger-menu > ul > li > a {
+
+#burger-menu>ul>li>a {
     text-decoration: none;
     justify-content: center;
     justify-items: center;
     justify-self: center;
 }
-#burger-menu > ul:first-child > li > a:hover {
-    animation-name: shift-right;
-    animation-duration: 1s;
-    animation-fill-mode:forwards
-}
-#burger-menu > ul:first-child > li > a {
-    animation-name: return-left;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-} 
 
+#burger-menu>ul:first-child>li>a:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: padding-left 1s, padding-right 1s;
+}
+
+#burger-menu>ul:first-child>li>a {
+    padding-left: 0;
+    padding-right: 0;
+    transition: padding-left 1s, padding-right 1s;
+}
 
 /* MAIN STUFF**********************************************/
 main {
@@ -156,96 +178,134 @@ main {
     gap: 20px;
     z-index: 0;
 }
-#hero, #event, #weather, #news, #spotlights, #join  {
-    aspect-ratio: 19/9;
+
+#hero,
+#event,
+#weather,
+#news,
+#spotlights,
+#join,
+#gallery,
+#stats,
+#discovery,
+#join-form,
+#member-benefits,
+#wide-hero,
+#response,
+#join-greeting {
     background-color: var(--drop-shadows);
-    border-radius: .5em;
+    border-radius: 0.5em;
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0px;
 }
-#hero {
+
+#hero,
+#wide-hero {
     display: grid;
     padding: 0;
     /*aspect-ratio: 4/3; */
     aspect-ratio: unset;
     text-shadow: 0 0 5px black;
     z-index: 0;
+    height: fit-content;
 }
+
 /* #hero video  */
-#hero picture {
+#hero picture,
+#hero video,
+#hero img,
+#wide-hero img,
+#wide-hero picture,
+#wide-hero video {
     width: 100%;
-    border: 0;
     grid-column: 1/2;
     grid-row: 1/2;
 }
-#hero > picture > img {
+
+#hero>picture>img {
     width: 100%;
 }
 
 #news {
-   background-image: radial-gradient(rgba(0,0,0,0) 70%, rgba(0,0,0,.1)), url(../images/news_ev_bg_400.webp);
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.1)),
+        url(../images/news_ev_bg_400.webp);
 }
+
 #join {
-    background-image: radial-gradient(rgba(0,0,0,0) 70%, rgba(0,0,0,.1)),url(../images/join_card_bg_400.webp);
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.1)),
+        url(../images/join_card_bg_400.webp);
     display: none;
     grid-template-rows: auto 1fr;
 }
+
 #event {
-    background-image:  radial-gradient(rgba(0,0,0,0) 70%, rgba(0,0,0,.1  )),url(../images/event_wax_bg_400.webp);
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.1)),
+        url(../images/event_wax_bg_400.webp);
 }
+
 #weather {
-    background-image:  radial-gradient(rgba(0,0,0,0) 70%, rgba(0,0,0,.1)),url(../images/weather_clouds_bg_400.webp);
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.1)),
+        url(../images/weather_clouds_bg_400.webp);
     aspect-ratio: unset;
 }
-#weather > div.gradient-backdrop > h2 {
+
+#weather>div.gradient-backdrop>h2 {
     margin-bottom: 0;
 }
-#weather > div#weather-display {
-    color:rgb(255, 255, 255);
+
+#weather>div#weather-display {
+    color: rgb(255, 255, 255);
     text-shadow: 0px 2px 2px black;
     padding: 20px;
     margin: 10px;
     background-color: var(--drop-shadows);
     border-radius: 5px;
 }
-#weather-display > div:nth-child(2) {
+
+#weather-display>div:nth-child(2) {
     clear: both;
 }
 
 #weather-icon {
     width: 30%;
     float: left;
-
 }
+
 #temperature {
     font-size: 2em;
 }
+
 #wind-speed {
     clear: both;
 }
+
 #weather-description {
     clear: both;
     font-weight: bold;
 }
+
 .join-button {
     align-self: center;
     justify-self: center;
     /*grid-row: 1/3;
     grid-column: 1/2; */
 }
+
 #spotlights {
-    aspect-ratio:unset;
-    padding: .5em;
+    aspect-ratio: unset;
+    padding: 0.5em;
 }
 
-#hero > h2 {
+#hero>h2,
+#wide-hero>h2 {
     grid-row: 1/2;
     grid-column: 1/2;
-    justify-self:end;
+    justify-self: end;
     text-align: center;
-    align-self:flex-end;
+    align-self: flex-end;
     color: rgb(243, 235, 224);
     background-color: var(--drop-shadows);
     width: 100%;
@@ -253,30 +313,36 @@ main {
     margin: 0;
     z-index: 2;
 }
-#hero > .join-button {
+
+#hero>.join-button,
+#wide-hero>.join-button {
     grid-row: 1/2;
     grid-column: 1/2;
     align-self: center;
     justify-self: center;
-    z-index: 2; 
+    z-index: 2;
 }
-#spotlights > * {
+
+#spotlights>* {
     background-color: var(--secondary-bg);
-    box-shadow: 0 .1em .3em var(--drop-shadows);
+    box-shadow: 0 0.1em 0.3em var(--drop-shadows);
 }
-#spotlights > *:nth-child(1) {
+
+#spotlights>*:nth-child(1) {
     background-image: url(../images/spotlight_garbage_bg_400.webp);
     background-size: cover;
     background-position-y: center;
     aspect-ratio: 1/1;
 }
-#spotlights > *:nth-child(2) {
+
+#spotlights>*:nth-child(2) {
     background-image: url(../images/spotlight_restaurant_bg_400.webp);
-    background-size:cover;
+    background-size: cover;
     background-position-y: center;
     aspect-ratio: 1/1;
 }
-#spotlights > *:nth-child(3) {
+
+#spotlights>*:nth-child(3) {
     background-image: url(../images/spotlight_hub_bg_400.webp);
     background-size: cover;
     background-position-y: center;
@@ -284,39 +350,157 @@ main {
     display: none;
 }
 
+#gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    padding: 20px;
+    order: 3;
+
+    aspect-ratio: unset;
+}
+
+#stats {
+    order: 2;
+    aspect-ratio: unset;
+    height: min-content;
+    /*font-size: 0.7em; */
+}
+
+#discovery {
+    order: 1;
+    aspect-ratio: unset;
+    height: min-content;
+}
+
+.gallery-figure {
+    width: 100%;
+    margin: 0;
+    background-color: black
+}
+
+.gallery-figure>picture>img {
+    width: 100%;
+    filter: blur(0em);
+    background-color: black;
+    /*because validator doesn't understand images */
+}
+
+.gallery-figure>img {
+    width: 100%;
+    filter: blur(0em);
+    background-color: black;
+    /*because validator doesn't understand images */
+}
+
+.gallery-figure>picture>img[data-src] {
+    filter: blur(1em);
+
+}
+
+.gallery-figure>figcaption {
+    padding: 10px;
+    background-color: var(--secondary-bg);
+    /*because validator doesn't understand images */
+}
 
 /* FOOTER STUFF ************************************************/
 footer {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    font-size: .75em;
+    font-size: 0.75em;
     align-items: center;
     row-gap: 20px;
 }
+
 footer div.contact-info {
     text-align: center;
     border-radius: 1em;
-    border: 2px solid rgba(0,0,0, .03);
+    border: 2px solid rgba(0, 0, 0, 0.03);
     padding: 10px;
 }
+
 #footer-logo {
     width: 3em;
     height: 3em;
     aspect-ratio: 1/1;
 }
 
+/* Form style *************************************************/
+
+#join-form {
+    width: 100%;
+    align-items: center;
+    padding: 0px;
+    flex-direction: column;
+}
+
+#join-form .gradient-backdrop form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#join-form form {
+    position: relative;
+
+}
+
+form label {
+    padding: 0;
+    width: 100%;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    height: 44px;
+    border: 1px solid rgba(0, 0, 0, 0.107);
+    border-radius: 10px;
+    padding: 5px 15px 5px 10px;
+    width: 100%;
+
+}
+
+form textarea {
+    height: 5em;
+    resize: vertical;
+    min-height: 4em;
+    max-height: 10em;
+}
+
+form input::placeholder {
+    color: rgba(109, 142, 116, 0.391);
+}
+
+form input:valid,
+form select:valid {
+    background-color: rgb(255, 255, 255);
+}
+
+form input:invalid,
+form select:invalid {
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom-width: 5px;
+    border-bottom-color: var(--pop-color);
+}
 
 /* Javascript STUFF **********************************************/
 #banner.menu-pinned {
     display: none;
 }
+
 .hidden {
     display: none;
 }
+
 .flex {
     display: flex;
 }
+
 .alert {
     font-size: 1.5em;
     overflow: hidden;
@@ -325,100 +509,204 @@ footer div.contact-info {
     justify-content: space-between;
     flex-wrap: nowrap;
     height: 1.2em;
-    background-color: rgba(255,255,255, .5);
+    background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     top: 0;
     width: 100%;
     border-radius: 4px 4px 0 0;
 }
-.alert > button {
+
+.alert>button {
     width: fit-content;
     padding: 0;
     margin: 0;
     border-radius: 2em;
 }
-.alert > span {
+
+.alert>span {
     margin: 0 1em;
 }
 
+img[data-src] {
+    filter: blur(2em);
+}
+
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+    position: relative;
+}
 
 /* ELEMENT STYLING **************************************/
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--heading-font);
 }
+
 a {
     color: var(--primary-fg);
     filter: brightness(110%);
 }
+
 a:hover {
     filter: brightness(140%);
-    text-shadow: 0 0 10px rgba(255,255,255,1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 
-
 /* GENERAL USE CLASSES ***************************************/
+.gold,
+.silver,
+.bronze,
+.np {
+    padding: 5px 9px 5px 9px;
+    border: 3px solid #0000001d;
+    border-bottom-color: #00000044;
+    border-right-color: #00000044;
+    border-top-color: #ffffff44;
+    border-left-color: #ffffff44;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(61, 56, 56, 0.284);
+    width: max-content;
+    text-align: center;
+    color: black;
+    overflow-x: hidden;
+}
+
+.gold {
+    background-image: linear-gradient(to bottom, rgb(255, 159, 4), rgb(255, 246, 150), rgb(228, 227, 187));
+    background-color: gold;
+}
+
+.silver {
+    background-image: linear-gradient(to bottom, rgb(87, 87, 87), rgb(255, 255, 255));
+    background-color: silver;
+}
+
+.bronze {
+    background-image: linear-gradient(to bottom, rgb(84, 76, 57), rgb(247, 253, 225));
+    background-color: rgb(129, 104, 60);
+}
+
+.np {
+    background-color: rgb(224, 245, 255);
+}
+
 .author {
     text-align: center;
 }
+
+#gallery figcaption a {
+    position: relative;
+}
+
+.gallery-figure {
+    position: relative;
+}
+
+.gallery-figure h3 {
+    color: var(--primary-bg);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5em;
+    margin: 0;
+    width: max-content;
+    text-shadow: 0 0 5px black;
+    /*pointer-events:none; I hate w3c validator. I really do */
+}
+
+#gallery figcaption a span.img-attribution {
+    /*Attribution box */
+    visibility: hidden;
+    position: absolute;
+    left: calc(100% + 20px);
+    top: -100%;
+    width: 160px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.334);
+    box-shadow: 0 0 0 black;
+}
+
+#gallery figcaption a:hover span.img-attribution {
+    display: inline;
+    visibility: visible;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.445);
+}
+
 .left-float {
     float: left;
     margin: 10px 20px 10px 0;
     width: 33%;
     height: auto;
-    border-radius: .5em;
+    border-radius: 0.5em;
     background-color: var(--drop-shadows);
-    box-shadow: .5em .5em .5em var(--drop-shadows);
+    box-shadow: 0.5em 0.5em 0.5em var(--drop-shadows);
 }
+
 .right-float {
     float: right;
     margin: 10px 0 10px 20px;
     width: 30%;
     height: auto;
-    border-radius: .5em;
+    border-radius: 0.5em;
     background-color: var(--drop-shadows);
-    box-shadow: .5em .5em .5em var(--drop-shadows);
+    box-shadow: 0.5em 0.5em 0.5em var(--drop-shadows);
 }
+
 .join-button {
     background-color: var(--primary-bg);
     color: var(--primary-fg);
     padding: 1em;
     border-radius: 1em;
     text-shadow: 0 0 5px white;
-    box-shadow: 0 .25em 5px var(--drop-shadows);
+    box-shadow: 0 0.25em 5px var(--drop-shadows);
     width: min-content;
 }
+
 .gradient-backdrop {
-    background-image: linear-gradient(180deg, rgba(255,255,255,.8) 80%, rgba(255,255,255,.6), rgba(255,255,255,0));
-    margin:unset;
+    background-image: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.8) 80%,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0));
+    margin: unset;
     height: fit-content;
+    width: 100%;
     text-shadow: 0 0 5px var(--secondary-bg);
     padding: 1em;
 }
-.gradient-backdrop > h2 {
+
+.gradient-backdrop>h2 {
     margin: 0;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
-.gradient-backdrop > p {
+
+.gradient-backdrop>p {
     margin: 0;
 }
 
+.small-text {
+    font-size: 0.6em;
+}
+
+.menu-selected {
+    color: var(--pop-color)
+}
 
 /* KEYFRAMES ***********************************************/
 @keyframes menu-slide-in {
-    from {  top: -180px; }
-    to  { top: 17px;}
-}
-@keyframes shift-right {
-    from {  padding-left: 0px;
-    padding-right:0px }
-    to  { padding-left: 10px;
-    padding-right: 10px;}
-}
-@keyframes return-left {
-    from {  padding-left: 10px; 
-    padding-right: 10px;}
-    to  { padding-left: 0;
-    padding-right: 0;}
+    from {
+        top: -180px;
+    }
+
+    to {
+        top: 17px;
+    }
 }
 
 

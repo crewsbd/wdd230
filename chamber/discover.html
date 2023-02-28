@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover some of the highlights of Fremont. This page has a collection of images from around Fremont.">
+    <title>Fremont Chamber of Commerce: Discover Fremont</title>
+    <link href="images/favicon.ico" rel="icon" type="image/icon">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Oswald:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="banner">
+            <img src="images/logo.webp" width=100 height=100 alt="Fremont chamber of commerce logo">
+            <h1>Fremont Chamber of Commerce</h1>
+            <div id="current-date">date</div>
+        </div>
+        <nav>
+            <div id="burger-button">
+                <img src="images/burger.svg" id="burger-open" width=30 height=30 alt="menu button">
+                <img src="images/close.svg" id="burger-close" class="hidden" width=30 height=30 alt="menu button">
+            </div>
+            <div id="menu-mask">
+                &nbsp;
+            </div>
+            <div id="burger-menu" class="hidden">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-selected">DISCOVERY</a>
+                    </li>
+                    <li>
+                        <a href="#">DIRECTORY</a>
+                    </li>
+                    <li>
+                        <a href="join.html">JOIN</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/cityoffremont/" target="_blank"><img
+                                src="images/facebook-icon.svg" width=30 height=30 alt="Facebook link"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Fremont_CA" target="_blank"><img src="images/twitter-icon.svg"
+                                width=30 height=30 alt="Twitter link"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="hero">
+            <picture>
+                <source media="(min-width: 63em)" srcset="images/hero_discover_600.webp">
+                <!--These parent div isn't linear with viewport-->
+                <source media="(min-width: 28em)" srcset="images/hero_discover_800.webp">
+                <img src="images/hero_discover_400.webp" alt="Cool people doing cool things.">
+            </picture>
+            <h2>
+                Discover Fremont.
+            </h2>
+            <div class="join-button">JOIN</div>
+        </div>
+        <div id="gallery">
+            <figure class="gallery-figure">
+                <img src="images/place_holder.svg"
+                    data-src="images/gallery_tesla_factory_600.webp 1100w,images/gallery_tesla_factory_800.webp 850w, images/gallery_tesla_factory_400.webp 450w"
+                    alt="Teslas factory">
+                <h3>Tesla Factory</h3>
+                <figcaption>Remember when we mentioned PG&E offering discounts on electric vehicles on the home page?
+                    That was foreshadowing. It's a literary techn... So, this is a Tesla factory. They make electric
+                    vehicles. Buy one.<br><a href="" target="_blank" class="attribution">Nikkorz<span
+                            class="img-attribution">"Title" by Author is licensed under CC BY 2.0</span></a>
+                </figcaption>
+            </figure>
+            <figure class="gallery-figure">
+                <img src="images/place_holder.svg"
+                    data-src="images/gallery_mission_peak_600.webp 1100w,images/gallery_mission_peak_800.webp 850w, images/gallery_mission_peak_400.webp 450w"
+                    alt="Some picture">
+                <h3>Mission Peak</h3>
+                <figcaption>Mission peak is what we call our second to tallest hill. Hike up it if you like swimming in
+                    oceans of humanity. Otherwise, go to Vargas Plateau. Same view, one tenth the effort and
+                    people.<br><a href="https://www.flickr.com/photos/sathishcj/5302817676" target="_blank"
+                        class="attribution">Sathish J<span class="img-attribution">"Mission Peak Magic" by Sathish J is
+                            licensed under CC BY 2.0</span></a>
+                </figcaption>
+            </figure>
+            <figure class="gallery-figure">
+
+                <img src="images/place_holder.svg"
+                    data-src="images/gallery_lake_elizabeth_600.webp 1100w,images/gallery_lake_elizabeth_800.webp 850w, images/gallery_lake_elizabeth_400.webp 450w"
+                    alt="Lake Elizabeth">
+                <h3>Lake Elizabeth</h3>
+                <figcaption>See those flying things? Those are geese. Statistically speaking, 9/10 of those are
+                    defecating at that moment, or any moment, on the sidewalk<br><a
+                        href="https://www.flickr.com/photos/nikkorz/50268120072/" target="_blank"
+                        class="attribution">Nikkorz<span class="img-attribution">"Morning Flight" by Nikkorz is licensed
+                            under CC BY 2.0</span></a>.
+                </figcaption>
+            </figure>
+            <figure class="gallery-figure">
+                <img src="images/place_holder.svg"
+                    data-src="images/gallery_quarry_lakes_600.webp 1100w,images/gallery_quarry_lakes_800.webp 850w, images/gallery_quarry_lakes_400.webp 450w"
+                    alt="Quarry Lakes">
+                <h3>Quarry Lakes</h3>
+                <figcaption>It used to be a quarry but is now a lake. It's grown soft and weak in its old age.<br><a
+                        href="https://www.flickr.com/photos/danramarch/4427273121" target="_blank"
+                        class="attribution">Daniel Ramirez<span class="img-attribution">"Quarry Lakes Park" by Daniel
+                            Ramirex is licensed under CC BY 2.0</span></a>
+                </figcaption>
+            </figure>
+            <figure class="gallery-figure">
+                <img src="images/place_holder.svg"
+                    data-src="images/gallery_niles_600.webp 1100w,images/gallery_niles_800.webp 850w, images/gallery_niles_400.webp 450w"
+                    alt="Niles, California">
+                <h3>Niles</h3>
+                <figcaption>Niles is a district in Fremont, but everyone talks about it like it is a separate town.
+                    Which it should be! Join the Niles independence movement today!<br><a
+                        href="https://www.flickr.com/photos/60700203@N03/50076524437" target="_blank"
+                        class="attribution">Charlie Day<span class="img-attribution">"4th of July Store Front at Night"
+                            by Charlie Day is licensed under CC BY 2.0</span></a>
+                </figcaption>
+            </figure>
+            <figure class="gallery-figure">
+                <img src="images/place_holder.svg"
+                    data-src="images/gallery_mc_hammer_600.webp 1100w,images/gallery_mc_hammer_800.webp 850w, images/gallery_mc_hammer_400.webp 450w"
+                    alt="Mc Hammers mansion">
+                <h3>MC Hammer Mansion</h3>
+                <figcaption>MC Hammer used to live here. Can't touch it though. Nope, can't touch this.<br><a
+                        href="https://www.flickr.com/photos/whsieh78/11864045875" target="_blank"
+                        class="attribution">Wayne Hsieh<span class="img-attribution">"Hammertime Gates" by Wayne Hsieh
+                            is licensed under CC BY 2.0</span></a>
+                </figcaption>
+            </figure>
+        </div>
+        <div id="stats">
+            <div class="gradient-backdrop">
+                <h2>STATISTICS</h2>
+                <h3>Population:</h3>
+                <table>
+                    <tr>
+                        <th>VALIDATOR MANDATED HEADING</th>
+                        <th>SAME</th> <!--Whoever wrote this validator should be fired-->
+                    </tr>
+                    <tr>
+                        <td>1980</td>
+                        <td>- 131,945</td>
+                    </tr>
+                    <tr>
+                        <td>2003</td>
+                        <td>- 209,000</td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>- 214,000</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>- 226,551</td>
+                    </tr>
+                </table>
+                <h3>Income:</h3>
+                <table>
+                    <tr>
+                        <th>VALIDATOR MANDATED HEADING</th>
+                        <th>SAME</th>
+                    </tr>
+                    <tr>
+                        <td>Median Household Income</td>
+                        <td>$96,287</td>
+                    </tr>
+                    <tr>
+                        <td>Average Household Income</td>
+                        <td>$114,000</td>
+                    </tr>
+                </table>
+                <h3>Housing:</h3>
+                <table>
+                    <tr>
+                        <th>VALIDATOR MANDATED HEADING</th>
+                        <th>SAME</th>
+                    </tr>
+                    <tr>
+                        <td>Total Number of Housing Units</td>
+                        <td>76,000</td>
+                    </tr>
+                    <tr>
+                        <td>Median Home Price</td>
+                        <td>$641,900</td>
+                    </tr>
+                </table>
+                <h3>Business QuickFacts:</h3>
+                <table>
+                    <tr>
+                        <th>Business QuickFacts (2007)</th>
+                        <th>Fremont</th>
+                    </tr>
+                    <tr>
+                        <td>Manufacturer's Shipments ($1000)</td>
+                        <td>$8,724,594</td>
+                    </tr>
+                    <tr>
+                        <td>Merchant wholesaler trades ($1000)</td>
+                        <td> $11,312,162</td>
+                    </tr>
+                    <tr>
+                        <td>Retail sales ($1000)</td>
+                        <td>$2,721,771</td>
+                    </tr>
+                    <tr>
+                        <td>Retail sales per capita</td>
+                        <td>$13,664</td>
+                    </tr>
+                    <tr>
+                        <td>Accommodation/food services sales ($1000)</td>
+                        <td>$296,626</td>
+                    </tr>
+                    <tr>
+                        <td>Total number of firms, 2007</td>
+                        <td>19,240</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="discovery">
+            <div class="gradient-backdrop">
+                <h2>FREMONT</h2>
+                Hey, welcome to the Fremont discovery page. <span class="repeat-visit"></span>It's a great place. Lots
+                of buildings and roads and some hills.
+                Don't forget the hills.
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <img id="footer-logo" src="images/logo.webp" width="50" height="50" alt="Fremont chamber of commerce logo">
+        <div class="contact-info"><a href="https://bit.ly/3ReznXd" target="_blank">39488 Stevenson Place, Suite 100,
+                Fremont, California 94539</a><br>
+            Phone: 510/795.2244 | Fax: 510/795.2240 | fmtcc@fremontbusiness.com</div>
+        <div class="author">&copy;<span id="year-field"></span> <a href="https://crewsbd.github.io/wdd230/"
+                target="_blank">Brian Crews</a> - WDD 230 Project - Last Updated: <span id="last-update-field"></span>
+        </div>
+    </footer>
+    <script src="scripts/datestamp.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/pinnedmenu.js"></script>
+    <script src="scripts/alerts.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/localstorage.js"></script>
+    <!--<script src="scripts/windchill.js"></script> -->
+</body>
+
+</html>

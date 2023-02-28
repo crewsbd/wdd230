@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="The Unofficial Fremont California chamber of commerce website. The first stop in connecting with businesses in the Fremont area.">
-    <title>Fremont Chamber of Commerce</title>
+        content="The Unofficial Fremont California chamber of commerce website. Join the chamber and enjoy many benefits to help you with your business.">
+    <title>Fremont Chamber of Commerce: Join</title>
     <link href="images/favicon.ico" rel="icon" type="image/icon">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
@@ -37,7 +37,7 @@
             <div id="burger-menu" class="hidden">
                 <ul>
                     <li>
-                        <a href="#" class="menu-selected">HOME</a>
+                        <a href="index.html">HOME</a>
                     </li>
                     <li>
                         <a href="discover.html">DISCOVERY</a>
@@ -46,7 +46,7 @@
                         <a href="#">DIRECTORY</a>
                     </li>
                     <li>
-                        <a href="join.html">JOIN</a>
+                        <a href="#" class="menu-selected">JOIN</a>
                     </li>
                     <li>
                         <a href="#">CONTACT</a>
@@ -66,77 +66,17 @@
         </nav>
     </header>
     <main>
-        <div id="hero">
-            
-            <video autoplay muted>
-                <source src="images/hills.mp4">
-                A video clip of cows in a field.
-            </video>
-            <!--<picture>
-                <source media="(min-width: 63em)" srcset="images/wdd230-org-large.webp"> 
-                <source media="(min-width: 28em)" srcset="images/wdd230-org-medium.webp"> 
-                <img src="images/wdd230-org-small.webp" alt="Cool people doing cool things.">
-            </picture> -->
+        <div id="wide-hero">
+            <img src="images/hero_join_1200.webp">
             <h2>
-                Fremont loves hills. No, really!
+                Your gateway to Fremont Business
             </h2>
-            <div class="join-button">JOIN</div>
         </div>
-        <div id="event">
+        <div id="response">
             <div class="gradient-backdrop">
-                <h2>Events</h2>
-                <p>WAX: It's the bee's knees! Ardenwood Historic Farm 1:00PM - 2:00PM Feb 04, 2023</p>
+                <span id="response-string"></span>
             </div>
         </div>
-        <div id="weather">
-            <div class="gradient-backdrop">
-                <h2>Weather</h2>
-            </div>
-            <div id="weather-display">
-                <div>
-                    <img src="images/weather-sunny.svg" id="weather-icon" alt="Sunny icon">
-                    <span id="temperature"></span> ℉<hr>
-                    <span id="weather-description">Partly Cloudy</span><hr>
-                </div>
-                <div>
-                    Wind Speed: <span id="wind-speed">2.5</span> km/h<hr>
-                    Wind Chill: <span id="wind-chill">N/A</span> ℉
-                </div>
-            </div>
-        </div>
-        <div id="news">
-            <div class="gradient-backdrop">
-                <h2>News Release</h2>
-                <p>PG&E offering discounts on electric vehicles.</p>
-            </div>
-        </div>
-        <div id="spotlights">
-            <div class="spotlight1">
-                <div class="gradient-backdrop">
-                    <h2>Trash</h2>
-                    <p>There are people for that</p>
-                </div>
-            </div>
-            <div class="spotlight2">
-                <div class="gradient-backdrop">
-                    <h2>Restaurant Supplies</h2>
-                    <p>They have them.</p>
-                </div>
-            </div>
-            <div class="spotlight3">
-                <div class="gradient-backdrop">
-                    <h2>Fremont Hub </h2>
-                    <p>There are some stores around here.</p>
-                </div>
-            </div>
-        </div>
-        <div id="join">
-            <div class="gradient-backdrop">
-                <p>One of us. One of us.</p>
-            </div>
-            <div class="join-button">JOIN</div>
-        </div>
-
     </main>
     <footer>
         <img id="footer-logo" src="images/logo.webp" width="50" height="50" alt="Fremont chamber of commerce logo">
@@ -151,7 +91,8 @@
     <script src="scripts/burger.js"></script>
     <script src="scripts/pinnedmenu.js"></script>
     <script src="scripts/alerts.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/validate.js"></script>
+    <script src="scripts/response.js"></script>
 </body>
 
 </html>
