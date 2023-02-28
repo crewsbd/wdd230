@@ -13,7 +13,7 @@ main > div.cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: center;
     gap: 1em;
     background-color: rgba(0, 0, 0, 0.542);
     padding: 1em;
