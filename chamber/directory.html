@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Unofficial Fremont California chamber of commerce website. A directory of local businesses.">
+    <title>Fremont Chamber of Commerce: Directory</title>
+    <link href="images/favicon.ico" rel="icon" type="image/icon">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Oswald:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="banner">
+            <img src="images/logo.webp" width=100 height=100 alt="Fremont chamber of commerce logo">
+            <h1>Fremont Chamber of Commerce</h1>
+            <div id="current-date">date</div>
+        </div>
+        <nav>
+            <div id="burger-button">
+                <img src="images/burger.svg" id="burger-open" width=30 height=30 alt="menu button">
+                <img src="images/close.svg" id="burger-close" class="hidden" width=30 height=30 alt="menu button">
+            </div>
+            <div id="menu-mask">
+                &nbsp;
+            </div>
+            <div id="burger-menu" class="hidden">
+                <ul>
+                    <li>
+                        <a href="#" class="menu-selected">HOME</a>
+                    </li>
+                    <li>
+                        <a href="discover.html">DISCOVERY</a>
+                    </li>
+                    <li>
+                        <a href="#">DIRECTORY</a>
+                    </li>
+                    <li>
+                        <a href="join.html">JOIN</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/cityoffremont/" target="_blank"><img
+                                src="images/facebook-icon.svg" width=30 height=30 alt="Facebook link"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Fremont_CA" target="_blank"><img src="images/twitter-icon.svg"
+                                width=30 height=30 alt="Twitter link"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="hero">
+            
+       
+            <picture>
+                <source media="(min-width: 63em)" srcset="images/hero-directory-large.webp"> 
+                <source media="(min-width: 28em)" srcset="images/hero-directory-medium.webp"> 
+                <img src="images/hero-directory-small.webp" alt="Cool people doing cool things.">
+            </picture>
+            <h2>
+                Fremont loves hills. No, really!
+            </h2>
+            <div class="join-button">JOIN</div>
+        </div>
+        
+
+    </main>
+    <footer>
+        <img id="footer-logo" src="images/logo.webp" width="50" height="50" alt="Fremont chamber of commerce logo">
+        <div class="contact-info"><a href="https://bit.ly/3ReznXd" target="_blank">39488 Stevenson Place, Suite 100,
+                Fremont, California 94539</a><br>
+            Phone: 510/795.2244 | Fax: 510/795.2240 | fmtcc@fremontbusiness.com</div>
+        <div class="author">&copy;<span id="year-field"></span> <a href="https://crewsbd.github.io/wdd230/"
+                target="_blank">Brian Crews</a> - WDD 230 Project - Last Updated: <span id="last-update-field"></span>
+        </div>
+    </footer>
+    <script src="scripts/datestamp.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/pinnedmenu.js"></script>
+    <script src="scripts/alerts.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>

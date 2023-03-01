@@ -1,4 +1,4 @@
-@media only screen and (min-width: 28em) {
+@media only screen and (min-width: 450px) {
     body {
         /* margin: 10px; */
         box-shadow: 0px 0px 8px var(--drop-shadows);

@@ -1,0 +1,114 @@
+{
+    "businesses": [
+        {
+            "name": "Mikey's Country Store",
+            "street1": "37161 Nile Blvd",
+            "street2": "",
+            "city": "Fremont",
+            "state": "California",
+            "zip": "94536",
+            "level": "Bronze",
+            "phone": "(510)574-0992",
+            "url": "https://www.facebook.com/mikeysniles/",
+            "imgurl": "images/bus1.webp"
+        },
+        {
+            "name": "Tesla",
+            "street1": "45500 Fremont Blvd",
+            "street2": "",
+            "city": "Fremont",
+            "state": "California",
+            "zip": "94538",
+            "level": "Gold",
+            "phone": "(510)249-3500",
+            "url": "https://tesla.com/",
+            "imgurl": "images/bus1.webp"
+        },
+        {
+            "name": "Fremont Bank",
+            "street1": "2580 Shea Center Dr.",
+            "street2": "",
+            "city": "Livermore",
+            "state": "California",
+            "zip": "94551",
+            "level": "Silver",
+            "phone": "(800)359-2265",
+            "url": "https://fremontbank.com/",
+            "imgurl": "images/bus1.webp"
+        },
+        {
+            "name": "Satomi Sushi",
+            "street1": "5026 Mowry Ave.",
+            "street2": "",
+            "city": "Fremont",
+            "state": "California",
+            "zip": "94538",
+            "level": "Bronze",
+            "phone": "(510)505-0360",
+            "url": "http://satomisushi.com/",
+            "imgurl": "images/bus1.webp"
+        },
+        {
+            "name": "Bronco Billy's Pizza Palace",
+            "street1": "37651 Niles Blvd.",
+            "street2": "#2947",
+            "city": "Fremont",
+            "state": "California",
+            "zip": "94536",
+            "level": "Gold",
+            "phone": "(510)792-1070",
+            "url": "https://www.broncobillysniles.com/",
+            "imgurl": "images/bus1.webp"
+        },
+        {
+            "name": "Game Kastle",
+            "street1": "3911 Washington Blvd.",
+            "street2": "",
+            "city": "Fremont",
+            "state": "California",
+            "zip": "94538",
+            "level": "Silver",
+            "phone": "(510)651-4263",
+            "url": "https://www.gamekastle.com/stores/fremont/",
+            "imgurl": "images/bus1.webp"
+        },
+        {
+            "name": "Nawab's Kitchen",
+            "street1": "39030 Argonaut Way",
+            "street2": "",
+            "city": "Fremont",
+            "state": "California",
+            "zip": "94538",
+            "level": "Bronze",
+            "phone": "(510)710-0183",
+            "url": "https://www.thenawabskitchen.com/",
+            "imgurl": "images/bus1.webp"
+        },
+        {
+            "name": "BK Bistro",
+            "street1": "3113 Stevenson Blvd.",
+            "street2": "",
+            "city": "Fremont",
+            "state": "California",
+            "zip": "94538",
+            "level": "Gold",
+            "phone": "(510)770-8818",
+            "url": "https://dinfo.me/bksbistro-togo.com/",
+            "imgurl": "images/bus1.webp"
+        },
+        {
+            "name": "California School For the Deaf",
+            "street1": "39350 Gallaudet Dr.",
+            "street2": "",
+            "city": "Fremont",
+            "state": "California",
+            "zip": "94538",
+            "level": "NP",
+            "phone": "(510)794-3666",
+            "url": "https://www.csdeagles.com/",
+            "imgurl": "images/bus1.webp"
+        }
+        
+        
+    ]
+}
