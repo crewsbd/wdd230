@@ -10,7 +10,7 @@
             "level": "Bronze",
             "phone": "(510)574-0992",
             "url": "https://www.facebook.com/mikeysniles/",
-            "imgurl": "images/bus1.webp"
+            "imgurl": "images/directory/mikeys.svg"
         },
         {
             "name": "Tesla",
@@ -22,7 +22,7 @@
             "level": "Gold",
             "phone": "(510)249-3500",
             "url": "https://tesla.com/",
-            "imgurl": "images/bus1.webp"
+            "imgurl": "images/directory/tesla.webp"
         },
         {
             "name": "Fremont Bank",
@@ -34,7 +34,7 @@
             "level": "Silver",
             "phone": "(800)359-2265",
             "url": "https://fremontbank.com/",
-            "imgurl": "images/bus1.webp"
+            "imgurl": "images/directory/fremontbank.webp"
         },
         {
             "name": "Satomi Sushi",
@@ -46,7 +46,7 @@
             "level": "Bronze",
             "phone": "(510)505-0360",
             "url": "http://satomisushi.com/",
-            "imgurl": "images/bus1.webp"
+            "imgurl": "images/directory/satomi.webp"
         },
         {
             "name": "Bronco Billy's Pizza Palace",
@@ -58,7 +58,7 @@
             "level": "Gold",
             "phone": "(510)792-1070",
             "url": "https://www.broncobillysniles.com/",
-            "imgurl": "images/bus1.webp"
+            "imgurl": "images/directory/broncobillys.webp"
         },
         {
             "name": "Game Kastle",
@@ -70,7 +70,7 @@
             "level": "Silver",
             "phone": "(510)651-4263",
             "url": "https://www.gamekastle.com/stores/fremont/",
-            "imgurl": "images/bus1.webp"
+            "imgurl": "images/directory/gamekastle.webp"
         },
         {
             "name": "Nawab's Kitchen",
@@ -82,7 +82,7 @@
             "level": "Bronze",
             "phone": "(510)710-0183",
             "url": "https://www.thenawabskitchen.com/",
-            "imgurl": "images/bus1.webp"
+            "imgurl": "images/directory/nawabs.webp"
         },
         {
             "name": "BK Bistro",
@@ -94,7 +94,7 @@
             "level": "Gold",
             "phone": "(510)770-8818",
             "url": "https://dinfo.me/bksbistro-togo.com/",
-            "imgurl": "images/bus1.webp"
+            "imgurl": "images/directory/bkbistro.webp"
         },
         {
             "name": "California School For the Deaf",
@@ -106,7 +106,7 @@
             "level": "NP",
             "phone": "(510)794-3666",
             "url": "https://www.csdeagles.com/",
-            "imgurl": "images/bus1.webp"
+            "imgurl": "images/directory/csftd.webp"
         }
         
         

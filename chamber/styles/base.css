@@ -192,7 +192,8 @@ main {
 #member-benefits,
 #wide-hero,
 #response,
-#join-greeting {
+#join-greeting,
+#directory {
     background-color: var(--drop-shadows);
     border-radius: 0.5em;
     overflow: hidden;
@@ -373,7 +374,52 @@ main {
     aspect-ratio: unset;
     height: min-content;
 }
+#directory {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+#directory-content {
+    display: grid;
+    width: 100%;
+    padding: 1em;
+    gap: 1em;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 345px);
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+}
+#directory-content.display-list {
 
+}
+#directory-content > div {
+    padding: 1em;
+    background-color: var(--drop-shadows);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#directory-content.display-list > div {
+    background-color: pink;
+}
+#directory>div.gradient-backdrop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.button-group > button:hover {
+    transform: scale(1.15);
+    transition: transform 1s;
+    text-shadow: 1px 1px 6px black;
+}
+.button-group > button {
+    transform: scale(1);
+    transition: transform .5s;
+}
 .gallery-figure {
     width: 100%;
     margin: 0;

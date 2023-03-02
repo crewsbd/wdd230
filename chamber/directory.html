@@ -37,13 +37,13 @@
             <div id="burger-menu" class="hidden">
                 <ul>
                     <li>
-                        <a href="#" class="menu-selected">HOME</a>
+                        <a href="index.html">HOME</a>
                     </li>
                     <li>
                         <a href="discover.html">DISCOVERY</a>
                     </li>
                     <li>
-                        <a href="#">DIRECTORY</a>
+                        <a href="#" class="menu-selected">DIRECTORY</a>
                     </li>
                     <li>
                         <a href="join.html">JOIN</a>
@@ -67,8 +67,6 @@
     </header>
     <main>
         <div id="hero">
-            
-       
             <picture>
                 <source media="(min-width: 63em)" srcset="images/hero-directory-large.webp"> 
                 <source media="(min-width: 28em)" srcset="images/hero-directory-medium.webp"> 
@@ -79,8 +77,13 @@
             </h2>
             <div class="join-button">JOIN</div>
         </div>
-        
-
+        <div id="directory">
+            <div class="gradient-backdrop">
+                <div class="button-group"><button id="gridview"><img src="images/grid-icon.svg" alt="grid display" width="60"></button><button id="listview"><img src="images/list-icon.svg" alt="list display" width="60"></button></div>
+                <div id="directory-content">
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <img id="footer-logo" src="images/logo.webp" width="50" height="50" alt="Fremont chamber of commerce logo">
@@ -95,7 +98,7 @@
     <script src="scripts/burger.js"></script>
     <script src="scripts/pinnedmenu.js"></script>
     <script src="scripts/alerts.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 
 </html>
