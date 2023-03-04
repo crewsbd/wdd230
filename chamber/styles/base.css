@@ -382,30 +382,30 @@ main {
     display: grid;
     width: 100%;
     padding: 1em;
-    gap: 1em;
+    gap: .5em;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 345px);
     /*grid-template-columns: 1fr 1fr 1fr;*/
-}
-#directory-content.display-list {
-
 }
 #directory-content > div {
     padding: 1em;
     background-color: white;
     display: flex;
-    border: 1px solid black;
+    border: 1px solid black; 
     border-radius: .5em;
     flex-direction: column;
     text-align: center;
     align-items: center;
+}
+.button-group > button.selected {
+    transform: scale(1.1);
 }
 /*List view */
 
 #directory-content.listview {
     display: flex;
     flex-direction: column;
-    
+    gap: 0;
 }
 #directory-content.listview > div.card {
     position: relative;
@@ -413,12 +413,15 @@ main {
     align-items:start;
     flex-wrap: wrap;
     background-color: unset;
+    border: 0;
+    border-radius: 0;
 }
 #directory-content.listview > div.card > div {
     text-align: left;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 #directory-content.listview > div.card > div:nth-child(2) {
     width: 12em;
@@ -428,7 +431,8 @@ main {
     width: 8em;
 }
 #directory-content.listview > div.card > div:nth-child(4) {
-    width: 10em;
+    width: auto;
+    max-width: 100%;
 }
 #directory-content.listview > div.card:nth-child(odd) {
     background-color: var(--drop-shadows);

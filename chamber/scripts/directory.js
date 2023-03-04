@@ -20,7 +20,9 @@ async function directory() {
         phone.innerHTML = `${business.phone}`;
 
         const busurl = document.createElement("div");
-        busurl.innerHTML = `${business.url}`;
+        const busurllink = document.createElement("a");
+        busurllink.innerHTML=`<a href="${business.url}" target="_blank">${business.url}</a>`
+        busurl.appendChild(busurllink);
         
         const card = document.createElement("div");
         card.classList.add("card");
@@ -38,7 +40,12 @@ directory();
 
 document.querySelector("#gridview").addEventListener("click", e => {
     document.querySelector("#directory-content").classList.remove("listview");
+    document.querySelector("#gridview").classList.add("selected");
+    document.querySelector("#listview").classList.remove("selected");
+
 })
 document.querySelector("#listview").addEventListener("click", e => {
     document.querySelector("#directory-content").classList.add("listview");
+    document.querySelector("#listview").classList.add("selected");
+    document.querySelector("#gridview").classList.remove("selected");
 })
