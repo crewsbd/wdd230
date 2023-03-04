@@ -1,5 +1,5 @@
 async function directory() {
-    const url = "/chamber/json/data.json";
+    const url = "/wdd230/chamber/json/data.json";
 
     const request = await fetch(url);
     const businesses = (await request.json()).businesses;
