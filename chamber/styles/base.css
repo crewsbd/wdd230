@@ -400,6 +400,7 @@ main {
 .button-group > button.selected {
     transform: scale(1.1);
 }
+
 /*List view */
 
 #directory-content.listview {
