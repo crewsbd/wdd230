@@ -174,4 +174,14 @@
     #response {
         grid-column: 1/3;
     }
+    
+
+    /*begin listview */
+    #directory-content.listview > div.card {
+
+        flex-direction: row;
+
+    }
+    /*end listview */
+
 }

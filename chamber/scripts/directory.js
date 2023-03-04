@@ -23,6 +23,7 @@ async function directory() {
         busurl.innerHTML = `${business.url}`;
         
         const card = document.createElement("div");
+        card.classList.add("card");
         card.appendChild(img);
         card.appendChild(address);
         card.appendChild(phone);
@@ -34,3 +35,10 @@ async function directory() {
     
 }
 directory();
+
+document.querySelector("#gridview").addEventListener("click", e => {
+    document.querySelector("#directory-content").classList.remove("listview");
+})
+document.querySelector("#listview").addEventListener("click", e => {
+    document.querySelector("#directory-content").classList.add("listview");
+})

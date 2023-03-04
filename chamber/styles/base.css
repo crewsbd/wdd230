@@ -392,20 +392,60 @@ main {
 }
 #directory-content > div {
     padding: 1em;
-    background-color: var(--drop-shadows);
+    background-color: white;
     display: flex;
+    border: 1px solid black;
+    border-radius: .5em;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
-#directory-content.display-list > div {
-    background-color: pink;
+/*List view */
+
+#directory-content.listview {
+    display: flex;
+    flex-direction: column;
+    
 }
+#directory-content.listview > div.card {
+    position: relative;
+    flex-direction: column;
+    align-items:start;
+    flex-wrap: wrap;
+    background-color: unset;
+}
+#directory-content.listview > div.card > div {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#directory-content.listview > div.card > div:nth-child(2) {
+    width: 12em;
+  
+}
+#directory-content.listview > div.card > div:nth-child(3) {
+    width: 8em;
+}
+#directory-content.listview > div.card > div:nth-child(4) {
+    width: 10em;
+}
+#directory-content.listview > div.card:nth-child(odd) {
+    background-color: var(--drop-shadows);
+}
+
+#directory-content.listview > div > img {
+    display: none;
+}
+/*end list view */
+
 #directory>div.gradient-backdrop {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
 .button-group {
     display: flex;
     flex-direction: row;
