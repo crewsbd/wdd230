@@ -6,7 +6,7 @@ html {
 body {
     margin: 50px auto;
     width: fit-content;
-    background-image:  radial-gradient(rgba(255, 255, 255, 0), rgba(197, 198, 255, 0.788)), linear-gradient(0deg, rgb(229, 239, 243), rgb(149, 179, 239));
+    background-image:  radial-gradient(rgba(255, 255, 255, 0), rgba(80, 83, 255, 0.398)), linear-gradient(0deg, rgb(229, 239, 243), rgb(97, 144, 240));
     background-repeat: no-repeat;
     overflow: hidden;
     border: 6px solid rgb(71, 82, 117);
