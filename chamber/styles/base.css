@@ -192,7 +192,8 @@ main {
 #member-benefits,
 #wide-hero,
 #response,
-#join-greeting {
+#join-greeting,
+#directory {
     background-color: var(--drop-shadows);
     border-radius: 0.5em;
     overflow: hidden;
@@ -373,7 +374,97 @@ main {
     aspect-ratio: unset;
     height: min-content;
 }
+#directory {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+#directory-content {
+    display: grid;
+    width: 100%;
+    padding: 1em;
+    gap: .5em;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 345px);
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+}
+#directory-content > div {
+    padding: 1em;
+    background-color: white;
+    display: flex;
+    border: 1px solid black; 
+    border-radius: .5em;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.button-group > button.selected {
+    transform: scale(1.1);
+}
 
+/*List view */
+
+#directory-content.listview {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+#directory-content.listview > div.card {
+    position: relative;
+    flex-direction: column;
+    align-items:start;
+    flex-wrap: wrap;
+    background-color: unset;
+    border: 0;
+    border-radius: 0;
+}
+#directory-content.listview > div.card > div {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#directory-content.listview > div.card > div:nth-child(2) {
+    width: 12em;
+  
+}
+#directory-content.listview > div.card > div:nth-child(3) {
+    width: 8em;
+}
+#directory-content.listview > div.card > div:nth-child(4) {
+    width: auto;
+    max-width: 100%;
+}
+#directory-content.listview > div.card:nth-child(odd) {
+    background-color: var(--drop-shadows);
+}
+
+#directory-content.listview > div > img {
+    display: none;
+}
+/*end list view */
+
+#directory>div.gradient-backdrop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.button-group > button:hover {
+    transform: scale(1.15);
+    transition: transform 1s;
+    text-shadow: 1px 1px 6px black;
+}
+.button-group > button {
+    transform: scale(1);
+    transition: transform .5s;
+}
 .gallery-figure {
     width: 100%;
     margin: 0;

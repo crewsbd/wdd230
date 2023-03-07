@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="The Unofficial Fremont California chamber of commerce website. Join the chamber and enjoy many benefits to help you with your business.">
-    <title>Fremont Chamber of Commerce: Join</title>
+        content="The Unofficial Fremont California chamber of commerce website. A directory of local businesses.">
+    <title>Fremont Chamber of Commerce: Directory</title>
     <link href="images/favicon.ico" rel="icon" type="image/icon">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
@@ -43,10 +43,10 @@
                         <a href="discover.html">DISCOVERY</a>
                     </li>
                     <li>
-                        <a href="directory.html">DIRECTORY</a>
+                        <a href="#" class="menu-selected">DIRECTORY</a>
                     </li>
                     <li>
-                        <a href="join.html" class="menu-selected">JOIN</a>
+                        <a href="join.html">JOIN</a>
                     </li>
                     <li>
                         <a href="#">CONTACT</a>
@@ -67,14 +67,22 @@
     </header>
     <main>
         <div id="wide-hero">
-            <img src="images/hero_join_1200.webp" alt="Hillside view of Alameda Creek trail.">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/hero_directory_1200.webp"> 
+                <source media="(min-width: 600px)" srcset="images/hero_directory_800.webp, images/hero_directory_1200 2x"> 
+                <source media="(min-width: 400px)" srcset="images/hero_directory_400.webp, images/hero_directory_800.webp 2x">
+                <img src="images/hero_directory_400.webp" alt="Cool people doing cool things.">
+            </picture>
             <h2>
-                Your gateway to Fremont Business
+                These businesses clicked that button up there. Do it! Do it!
             </h2>
+            <div class="join-button">JOIN</div>
         </div>
-        <div id="response">
+        <div id="directory">
             <div class="gradient-backdrop">
-                <span id="response-string"></span>
+                <div class="button-group"><button id="gridview"><img src="images/grid-icon.svg" alt="grid display" width="60"></button><button id="listview"><img src="images/list-icon.svg" alt="list display" width="60"></button></div>
+                <div id="directory-content">
+                </div>
             </div>
         </div>
     </main>
@@ -91,8 +99,7 @@
     <script src="scripts/burger.js"></script>
     <script src="scripts/pinnedmenu.js"></script>
     <script src="scripts/alerts.js"></script>
-    <script src="scripts/validate.js"></script>
-    <script src="scripts/response.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 
 </html>
