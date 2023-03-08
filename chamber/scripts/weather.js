@@ -40,7 +40,7 @@ function displayResults(weatherdata) {
     const capitalizedDescription = toUpperCamelCase(description);
 
     temperature.innerHTML = `<strong>${weatherdata.main.temp.toFixed(0)}</strong>`;
-    icon.setAttribute("src", `https://openweathermap.org/img/w/${weatherdata.weather[0].icon}.png`);
+    icon.setAttribute("src", `https://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@4x.png`);
     icon.setAttribute("alt", `${weatherdata.weather[0].description}`);
     description.textContent = capitalizedDescription;
     windSpeed.innerHTML = `${weatherdata.wind.speed}`;
