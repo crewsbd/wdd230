@@ -5,7 +5,8 @@ html {
 
 body {
     margin: 50px auto;
-    width: fit-content;
+    min-width: 200px;
+    max-width: 650px;
     background-image:  radial-gradient(rgba(255, 255, 255, 0), rgba(80, 83, 255, 0.398)), linear-gradient(0deg, rgb(229, 239, 243), rgb(97, 144, 240));
     background-repeat: no-repeat;
     overflow: hidden;
@@ -13,11 +14,14 @@ body {
     border-radius: .75em;
     display: grid;
     grid-template-columns: 1fr;
+    overflow-wrap: break-word;
 }
 
 body>h1 {
     padding: 1em;
+    width: 100%;
     margin: 0;
+    overflow-wrap: break-word;
 }
 
 body>figure {
