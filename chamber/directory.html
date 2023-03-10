@@ -68,10 +68,12 @@
     <main>
         <div id="wide-hero">
             <picture>
-                <source media="(min-width: 800px)" srcset="images/hero_directory_1200.webp"> 
-                <source media="(min-width: 600px)" srcset="images/hero_directory_800.webp, images/hero_directory_1200 2x"> 
-                <source media="(min-width: 400px)" srcset="images/hero_directory_400.webp, images/hero_directory_800.webp 2x">
-                <img src="images/hero_directory_400.webp" alt="Cool people doing cool things.">
+                <source media="(min-width: 845px)" srcset="images/hero_directory_1200.webp">
+                <source media="(min-width: 446px)"
+                    srcset="images/hero_directory_800.webp, images/hero_directory_1200.webp 2x">
+                <source media="(min-width: 0)"
+                    srcset="images/hero_directory_400.webp, images/hero_directory_800.webp 2x">
+                <img src="images/hero_directory_400.webp" alt="Some old telephone and typewriter.">
             </picture>
             <h2>
                 These businesses clicked that button up there. Do it! Do it!
@@ -80,7 +82,9 @@
         </div>
         <div id="directory">
             <div class="gradient-backdrop">
-                <div class="button-group"><button id="gridview"><img src="images/grid-icon.svg" alt="grid display" width="60"></button><button id="listview"><img src="images/list-icon.svg" alt="list display" width="60"></button></div>
+                <div class="button-group"><button id="gridview"><img src="images/grid-icon.svg" alt="grid display"
+                            width="60" height="60"></button><button id="listview"><img src="images/list-icon.svg" alt="list display"
+                            width="60" height="60"></button></div>
                 <div id="directory-content">
                 </div>
             </div>

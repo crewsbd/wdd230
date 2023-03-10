@@ -21,7 +21,7 @@ async function directory() {
 
         const busurl = document.createElement("div");
         const busurllink = document.createElement("a");
-        busurllink.innerHTML=`<a href="${business.url}" target="_blank">${business.url}</a>`
+        busurllink.innerHTML=`<a href="http:////${business.url}" target="_blank">${business.url}</a>`
         busurl.appendChild(busurllink);
         
         const card = document.createElement("div");
