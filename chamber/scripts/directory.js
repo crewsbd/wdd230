@@ -32,9 +32,7 @@ async function directory() {
         card.appendChild(busurl);
 
         directoryContent.appendChild(card);
-        
-    });
-    
+    }); 
 }
 directory();
 
