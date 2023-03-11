@@ -27,7 +27,7 @@ function displayResults(weatherdata) {
     }).join(" ");
 
     currentTemp.innerHTML = `<strong>${weatherdata.main.temp.toFixed(0)}</strong>`;
-    weatherIcon.setAttribute("src", `https://openweathermap.org/img/w/${weatherdata.weather[0].icon}.png`);
+    weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@4x.png`);
     weatherIcon.setAttribute("alt", `${weatherdata.weather[0].description}`);
     captionDesc.textContent = capitalizedDescription;
 }
