@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="The Unofficial Fremont California chamber of commerce website. The first stop in connecting with businesses in the Fremont area.">
-    <title>Fremont Chamber of Commerce</title>
+        content="The Unofficial Fremont California chamber of commerce website. Contact the chamber here.">
+    <title>Fremont Chamber of Commerce - Contact</title>
     <link href="images/favicon.ico" rel="icon" type="image/icon">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
@@ -37,7 +37,7 @@
             <div id="burger-menu" class="hidden">
                 <ul>
                     <li>
-                        <a href="#" class="menu-selected">HOME</a>
+                        <a href="index.html">HOME</a>
                     </li>
                     <li>
                         <a href="discover.html">DISCOVERY</a>
@@ -49,7 +49,7 @@
                         <a href="join.html">JOIN</a>
                     </li>
                     <li>
-                        <a href="contact.html">CONTACT</a>
+                        <a href="#" class="menu-selected">CONTACT</a>
                     </li>
                 </ul>
                 <ul>
@@ -66,77 +66,20 @@
         </nav>
     </header>
     <main>
-        <div id="hero">
-            
-            <!-- <video autoplay muted>
-                <source src="images/hills.mp4">
-                A video clip of cows in a field.
-            </video> -->
+        <div id="wide-hero">
             <picture>
-                <source media="(min-width: 800px)" srcset="images/hero_index_800.webp">
-                <source media="(min-width: 600px)" srcset="images/hero_index_800.webp, images/hero_index_800.webp 2x">
-                <source media="(min-width: 200px)" srcset="images/hero_index_400.webp, images/hero_index_800.webp 2x">
-                <img src="images/hero_index_400.webp" alt="View of Fremont from above.">
+                <source media="(min-width: 845px)" srcset="images/hero_contact_800.webp">
+                <source media="(min-width: 446px)"
+                    srcset="images/hero_contact_600.webp, images/hero_contact_800.webp 2x">
+                <source media="(min-width: 0)" srcset="images/hero_contact_400.webp, images/hero_contact_800.webp 2x">
+                <img src="images/hero_contact_400.webp" alt="Three old mail boxes.">
             </picture>
             <h2>
-                Fremont loves hills. No, really!
+                Must you?
             </h2>
             <div class="join-button">JOIN</div>
         </div>
-        <div id="event">
-            <div class="gradient-backdrop">
-                <h2>Events</h2>
-                <p>WAX: It's the bee's knees! Ardenwood Historic Farm 1:00PM - 2:00PM Feb 04, 2023</p>
-            </div>
-        </div>
-        <div id="weather">
-            <div class="gradient-backdrop">
-                <h2>Weather</h2>
-            </div>
-            <div id="weather-display">
-                <div>
-                    <img src="images/weather-sunny.svg" id="weather-icon" alt="Sunny icon">
-                    <span id="temperature"></span> ℉<hr>
-                    <span id="weather-description">Partly Cloudy</span><hr>
-                </div>
-                <div>
-                    Wind Speed: <span id="wind-speed">Err</span> m/h<hr>
-                    Wind Chill: <span id="wind-chill">Err</span> ℉
-                </div>
-            </div>
-        </div>
-        <div id="news">
-            <div class="gradient-backdrop">
-                <h2>News Release</h2>
-                <p>PG&E offering discounts on electric vehicles.</p>
-            </div>
-        </div>
-        <div id="spotlights">
-            <div class="spotlight1">
-                <div class="gradient-backdrop">
-                    <h2>Trash</h2>
-                    <p>There are people for that</p>
-                </div>
-            </div>
-            <div class="spotlight2">
-                <div class="gradient-backdrop">
-                    <h2>Restaurant Supplies</h2>
-                    <p>They have them.</p>
-                </div>
-            </div>
-            <div class="spotlight3">
-                <div class="gradient-backdrop">
-                    <h2>Fremont Hub </h2>
-                    <p>There are some stores around here.</p>
-                </div>
-            </div>
-        </div>
-        <div id="join">
-            <div class="gradient-backdrop">
-                <p>One of us. One of us.</p>
-            </div>
-            <div class="join-button">JOIN</div>
-        </div>
+
 
     </main>
     <footer>
@@ -146,7 +89,7 @@
             Phone: 510/795.2244 | Fax: 510/795.2240 | fmtcc@fremontbusiness.com</div>
         <div class="author">&copy;<span id="year-field"></span> <a href="https://crewsbd.github.io/wdd230/"
                 target="_blank">Brian Crews</a> - WDD 230 Project - Last Updated: <span id="last-update-field"></span>
-                <a href="attributions.html" target="_blank">Attributions</a>
+            <a href="attributions.html" target="_blank">Attributions</a>
         </div>
     </footer>
     <script src="scripts/datestamp.js"></script>
