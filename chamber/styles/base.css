@@ -193,7 +193,11 @@ main {
 #wide-hero,
 #response,
 #join-greeting,
-#directory {
+#directory,
+#blurb,
+#contact-map,
+#contact-form,
+#contact-trad {
     background-color: var(--drop-shadows);
     border-radius: 0.5em;
     overflow: hidden;
@@ -216,6 +220,10 @@ main {
     width: 100%;
     justify-self: center;
 }
+#contact-map>iframe {
+    width: 100%;
+    height: 100%;
+}
 
 /* #hero video  */
 #hero picture,
@@ -231,6 +239,10 @@ main {
 
 #hero>picture>img {
     width: 100%;
+    vertical-align: middle;
+}
+#wide-hero>picture>img {
+    vertical-align: middle;
 }
 
 #news {
@@ -478,14 +490,13 @@ main {
     width: 100%;
     filter: blur(0em);
     background-color: black;
-    /*because validator doesn't understand images */
 }
 
 .gallery-figure>img {
     width: 100%;
     filter: blur(0em);
     background-color: black;
-    /*because validator doesn't understand images */
+    vertical-align: middle;
 }
 
 .gallery-figure>picture>img[data-src] {
