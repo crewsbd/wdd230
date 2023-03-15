@@ -549,6 +549,12 @@ footer div.contact-info {
     gap: 15px;
 }
 
+#contact-form .gradient-backdrop form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 #join-form form {
     position: relative;
 
