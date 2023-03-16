@@ -1,4 +1,4 @@
-async function directory() {
+async function spotlights() {
     const url = "json/data.json";
 
     const request = await fetch(url);
@@ -34,7 +34,7 @@ async function directory() {
         directoryContent.appendChild(card);
     }); 
 }
-directory();
+spotlights();
 
 document.querySelector("#gridview").addEventListener("click", e => {
     document.querySelector("#directory-content").classList.remove("listview");
