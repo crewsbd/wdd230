@@ -8,7 +8,7 @@ async function spotlights() {
     const request = await fetch(url);
     const businesses = (await request.json()).businesses;
 
-    const goldBusinesses = getGolds(businesses);
+    const goldBusinesses = getSpotlights(businesses);
     const randomSort = getRandomItems(goldBusinesses, 3);
 
     spotlight1.innerHTML = `<h2>${randomSort[0].name}</h2><img src="${randomSort[0].imgurl}"><p>${randomSort[0].street1}<br>${randomSort[0].street2}<br><a href="http://${randomSort[0].url}" target="_blank">${breakURL(randomSort[0].url)}</a></p>`;
@@ -54,9 +54,9 @@ function getRandomItems(items, count) {
     const shuffled = [...items].sort(() => 0.5 - Math.random());
     return shuffled.slice(0, count);
 }
-function getGolds(businesses) {
+function getSpotlights(businesses) {
     return businesses.filter((business) => {
-        if (business.level == "Gold") {
+        if (business.level == "Gold" || business.level == "Silver") {
             return true;
         }
     })

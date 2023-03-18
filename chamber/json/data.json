@@ -10,7 +10,8 @@
             "level": "Bronze",
             "phone": "(510)574-0992",
             "url": "www.facebook.com/mikeysniles",
-            "imgurl": "images/directory/mikeys.svg"
+            "imgurl": "images/directory/mikeys.svg",
+            "bg": "generic"
         },
         {
             "name": "Tesla",
@@ -35,7 +36,8 @@
             "level": "Silver",
             "phone": "(800)359-2265",
             "url": "fremontbank.com",
-            "imgurl": "images/directory/fremontbank.webp"
+            "imgurl": "images/directory/fremontbank.webp",
+            "bg": "generic"
         },
         {
             "name": "Satomi Sushi",
@@ -47,7 +49,8 @@
             "level": "Bronze",
             "phone": "(510)505-0360",
             "url": "satomisushi.com",
-            "imgurl": "images/directory/satomi.webp"
+            "imgurl": "images/directory/satomi.webp",
+            "bg": "generic"
         },
         {
             "name": "Bronco Billy's Pizza Palace",
@@ -72,7 +75,8 @@
             "level": "Silver",
             "phone": "(510)651-4263",
             "url": "www.gamekastle.com/stores/fremont",
-            "imgurl": "images/directory/gamekastle.webp"
+            "imgurl": "images/directory/gamekastle.webp",
+            "bg": "generic"
         },
         {
             "name": "Nawab's Kitchen",
@@ -84,7 +88,8 @@
             "level": "Bronze",
             "phone": "(510)710-0183",
             "url": "www.thenawabskitchen.com",
-            "imgurl": "images/directory/nawabs.webp"
+            "imgurl": "images/directory/nawabs.webp",
+            "bg": "generic"
         },
         {
             "name": "BK Bistro",
@@ -109,7 +114,8 @@
             "level": "NP",
             "phone": "(510)794-3666",
             "url": "www.csdeagles.com",
-            "imgurl": "images/directory/csftd.webp"
+            "imgurl": "images/directory/csftd.webp",
+            "bg": "generic"
         }
         
         
