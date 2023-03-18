@@ -829,3 +829,6 @@ a:hover {
 
 
 /*Sandbox *******************************************************/
+div#stats table th {
+    text-align: left;
+}
