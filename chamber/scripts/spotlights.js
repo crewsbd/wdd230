@@ -11,9 +11,14 @@ async function spotlights() {
     const goldBusinesses = getGolds(businesses);
     const randomSort = getRandomItems(goldBusinesses, 3);
 
-    spotlight1.innerHTML = `<h2>${randomSort[0].name}</h2>`;
-    spotlight2.innerHTML = `<h2>${randomSort[1].name}</h2>`;
-    spotlight3.innerHTML = `<h2>${randomSort[2].name}</h2>`;
+    spotlight1.innerHTML = `<h2>${randomSort[0].name}</h2><img src="${randomSort[0].imgurl}"><p>${randomSort[0].street1}<br>${randomSort[0].street2}<br><a href="http://${randomSort[0].url}" target="_blank">${randomSort[0].url}</a></p>`;
+    spotlight2.innerHTML = `<h2>${randomSort[1].name}</h2><img src="${randomSort[1].imgurl}"><p>${randomSort[1].street1}<br>${randomSort[1].street2}<br><a href="http://${randomSort[1].url}" target="_blank">${randomSort[1].url}</a></p>`;
+    spotlight3.innerHTML = `<h2>${randomSort[2].name}</h2><img src="${randomSort[2].imgurl}"><p>${randomSort[2].street1}<br>${randomSort[2].street2}<br><a href="http://${randomSort[2].url}" target="_blank">${randomSort[2].url}</a></p>`;
+
+    spotlight1.parentElement.style.backgroundImage = `radial-gradient(rgba(0,0,0,0) 70%, rgba(0,0,0,.1)), url(images/directory/${randomSort[0].bg}bg_400.webp)`;
+    spotlight2.parentElement.style.backgroundImage = `radial-gradient(rgba(0,0,0,0) 70%, rgba(0,0,0,.1)), url(images/directory/${randomSort[1].bg}bg_400.webp)`;
+    spotlight3.parentElement.style.backgroundImage = `radial-gradient(rgba(0,0,0,0) 70%, rgba(0,0,0,.1)), url(images/directory/${randomSort[2].bg}bg_400.webp)`;
+
 
     //Future reference---
     /*businesses.forEach(business => {
