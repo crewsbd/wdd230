@@ -1,12 +1,217 @@
 :root {
-    --title-font: 'Dancing Script', cursive;
-    --heading-font: 'Oxygen', sans-serif;
-    --body-font: 'Cormorant Garamond', serif;
+    --font-title: 'Dancing Script', cursive;
+    --font-heading: 'Oxygen', sans-serif;
+    --font-body: 'Cormorant Garamond', serif;
+    --color-heading-text: #e1ffc6;
+    --color-heading-bg: #823b2f;
+    --color-body-text: #3e5a26;
+    --color-body-bg: #ffffff;
+    --color-pop: #ff0000;
 }
 
 /* UNIVERSAL */
+* {
+    /*border: 1px solid red; */
+}
+
+html {
+    background-color: rgb(208, 208, 208);
+    display: flex;
+    justify-content: center;
+
+}
+
+body {
+    max-width: 1000px;
+    margin: 0;
+    padding: 0em;
+    background-color: var(--color-heading-bg);
+    border-radius: 1em;
+    overflow-x: hidden;
+    transition: margin 1s, border-radius 1s;
+}
+
+header {
+    background-color: var(--color-heading-bg);
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 70px;
+    position: sticky;
+    top: 0;
+    border-radius: 1em;
+    z-index: 3;
+}
+
+#banner {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+    width: fit-content;
+    justify-self: end;
+    align-self: center;
+    z-index: 2;
+}
+
+nav button {
+    background-color: unset;
+    border: unset;
+}
+
+nav ul {
+    background-color: rgba(255, 255, 255, 0.849);
+    text-align: left;
+    padding: 1em;
+    margin: 0;
+    position: absolute;
+    top: 74px;
+    right: -1em;
+    list-style-type: none;
+    display: flex;
+    gap: .5em;
+    flex-direction: column;
+    z-index: 2;
+    border-radius: 0 0 0 1em;
+
+}
+
+nav li {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 1.2em;
+    color: var(--color-body-text);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    filter: brightness(1.9);
+}
+
+nav a:visited {
+    color: var(--color-body-text);
+}
+
+#menu-open {
+    height: 40px;
+}
+
+#menu-close {
+    height: 40px;
+}
+
+.invisible {
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+/* Menu slide in */
+.hidden {
+    transform: translateX(10em);
+    opacity: 0;
+    transition: transform 2s, opacity 2s;
+}
+.revealed {
+    transform: none;
+    opacity: 1;
+    transition: transform .5s, opacity .5s;
+}
+
+.current-page {
+    color: var(--color-pop);
+}
+
+header h1 {
+    font-family: var(--font-title);
+    color: var(--color-heading-text);
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    border-radius: 1em;
+    overflow: hidden;
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0)), url(../images/grass.webp);
+    background-attachment: fixed;
+    background-position-x: center;
+    padding: 1em;
+
+}
+
+footer {
+    padding: 1em;
+    color: var(--color-heading-text);
+}
+
+#hero {
+    background-color: var(--color-body-bg);
+    display: grid;
+    grid-template-rows: 6em auto;
+    color: var(--color-body-text);
+    padding: 0;
+    text-align: center;
+    grid-column: 1/2;
+    max-width: 700px;
+    width: 100%;
+    justify-self: center;
+    align-items: center;
+    align-content: end;
+    box-sizing: border-box;
+}
+
+#hero h2 {
+    background-color: rgba(137, 66, 66, 0.863);
+    grid-row: 1/2;
+    grid-column: 1/2;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#hero img {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    z-index: 1;
+}
+
 
 /* HOME ONLY */
+#coast,
+#weather,
+#drink-spotlight {
+    background-color: rgb(255, 255, 255);
+    color: var(--color-body-text);
+    padding: 1em;
+    backdrop-filter: blur(.4em);
+    border-radius: .2em;
+    box-sizing: border-box;
+}
+
+main h2 {
+    background-color: var(--color-heading-bg);
+    color: var(--color-heading-text);
+    margin: 0;
+    padding: .5em;
+    font-family: var(--font-heading);
+    font-size: 1.3em;
+}
 
 /* FRESH ONLY */
 
