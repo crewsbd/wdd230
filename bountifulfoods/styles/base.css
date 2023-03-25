@@ -72,11 +72,11 @@ nav ul {
     padding: 1em;
     margin: 0;
     position: absolute;
-    top: 74px;
+    top: 68px;
     right: -1em;
     list-style-type: none;
     display: flex;
-    gap: .5em;
+    gap: 1em;
     flex-direction: column;
     z-index: 2;
     border-radius: 0 0 0 1em;
@@ -86,7 +86,7 @@ nav ul {
 nav li {
     font-family: var(--font-heading);
     font-weight: 900;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: var(--color-body-text);
 }
 
@@ -103,11 +103,11 @@ nav a:visited {
 }
 
 #menu-open {
-    height: 40px;
+    height: 30px;
 }
 
 #menu-close {
-    height: 40px;
+    height: 30px;
 }
 
 .invisible {
@@ -182,7 +182,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #hero img {
@@ -204,13 +203,67 @@ footer {
     box-sizing: border-box;
 }
 
+#coast-map
+{
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: unset;
+    box-sizing: border-box;
+    border: none;
+}
+#weather-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+#weather-icon {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+}
+#temperature {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: 2.1em;
+    z-index: 2;
+    background-color: rgba(255, 187, 187, 0.828);
+    aspect-ratio: 1/1;
+    border-radius: 10em;
+    padding: .2em;
+    box-shadow: 0 0 1em white;
+}
+#weather-description {
+    font-size: large;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
 main h2 {
     background-color: var(--color-heading-bg);
     color: var(--color-heading-text);
     margin: 0;
+    margin-bottom: 1em;
     padding: .5em;
     font-family: var(--font-heading);
     font-size: 1.3em;
+}
+#drink-spotlight-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.drink-spotlight-item {
+    border: 1px solid red;
+    border-radius: .5em;
+    padding: 1em;
+    box-shadow: 0 .3em .5em rgba(0, 0, 0, 0.387);
+
 }
 
 /* FRESH ONLY */
