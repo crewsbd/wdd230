@@ -6,7 +6,7 @@
     --color-heading-bg: #823b2f;
     --color-body-text: #3e5a26;
     --color-body-bg: #ffffff;
-    --color-pop: #ff0000;
+    --color-pop: #cb0101;
 }
 
 /* UNIVERSAL */
@@ -233,7 +233,7 @@ footer {
     box-shadow: .2em .2em .2em rgba(0, 0, 0, 0.555), .1em .1em .2em rgba(255, 255, 255, 0.469) inset,  -.1em -.1em .2em rgba(0, 0, 0, 0.469) inset;
     text-decoration: none;
     font-family: var(--font-heading);
-    color: var(--color-heading-text);
+    color: white;
 }
 #hero img {
     grid-row: 1/3;
