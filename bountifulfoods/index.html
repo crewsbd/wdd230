@@ -22,29 +22,43 @@
 <body>
     <header>
         <div id="banner">
-            <img src="images/logo.svg" width="50">
+            <img src="images/logo.svg" width="50" alt="Bountiful Foods Logo">
             <h1>Bountiful Foods</h1>
+            <span class="social">
+                <a href="http://www.facebook.com" target="_blank"><img src="images/social/facebook-icon.svg" width="30"
+                        alt="facebook icon"></a>
+                <a href="http://www.twitter.com" target="_blank"><img src="images/social/twitter-icon.svg" width="30"
+                        alt="twitter icon"></a>
+                <a href="http://www.snapchat.com" target="_blank"><img src="images/social/snapchat-icon.svg" width="30"
+                        alt="snapchat icon"></a> 
+            </span>
         </div>
+
         <nav>
-            <button id="menu-open"><img src="images/menu-closed.svg" width="30" height="30"></button>
-            <button id="menu-close" class="invisible"><img src="images/menu-opened.svg" width="30" height="30"></button>
+            <button id="menu-open"><img src="images/menu-closed.svg" width="30" height="30" alt="menu button"></button>
+            <button id="menu-close" class="invisible"><img src="images/menu-opened.svg" width="30" height="30"
+                    alt="menu button"></button>
             <ul class="hidden" id="menu-content">
                 <li class="current-page">HOME</li>
                 <li><a href="fresh.html">FRESH</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="resource.html">RESOURCES</a></li>
             </ul>
-
         </nav>
     </header>
     <main>
         <section id="hero">
             <h2>A conucopia of fresh fruit and vegetables!</h2>
-            <img src="images/hero/hero-home.webp" alt="Some vegetables" width="100%">
+            <a href="fresh.html">Make A Drink Now!</a>
+            <img src="images/hero/hero-home-500.webp"
+                srcset="images/hero/hero-home-700.webp 700w, images/hero/hero-home-500.webp 500w" width="500" sizes="
+                (min-width: 500px) 700px, 500px" alt="A fruit smoothy">
         </section>
         <section id="coast">
             <h2>THE CALIFORNIA COAST</h2>
-            <iframe id="coast-map" src="https://www.google.com/maps/d/u/0/embed?mid=1rnYX7bUUjaqIZVczuNv-PR3OVke05Wo&ehbc=2E312F" width="500" height="500"></iframe>
+            <iframe id="coast-map"
+                src="https://www.google.com/maps/d/u/0/embed?mid=1rnYX7bUUjaqIZVczuNv-PR3OVke05Wo&ehbc=2E312F"
+                width="500" height="500"></iframe>
             <p>Our business is located in the ever sunny Southern California, nearby the very farms where we sources our
                 produce. If you come and visit us, and we know you will, make sure to check out some of the interesting
                 attractions nearby.
@@ -54,41 +68,39 @@
                 I can't back that up.</p>
             <h3>Carlsbad State Beach</h3>
             <p>This is the best beach in the universe. Trust us. That's an objective statement of fact.</p>
+            <h3>Pacific Coast Highway</h3>
+            <p>Cruise down this scenic stretch of historical highway. Wave at any passing produce trucks.</p>
 
         </section>
         <section id="weather">
             <h2>WEATHER</h2>
             <div id="weather-display">
                 <div id="temperature"></div>
-                <img src="images/place-holder.webp" id="weather-icon"></img>
+                <img src="images/place-holder.webp" id="weather-icon" alt="Current weather icon">
                 <div id="weather-description"></div>
                 <div id="humidity"></div>
                 <div id="forecast"></div>
             </div>
         </section>
         <section id="drink-spotlight">
-            <h2>DRINK HIGHLIGHT</h2>
-            <div id="drink-spotlight-items">
-                <div class="drink-spotlight-item">
-                    <h4>Avocado-Cazam?</h4>
-                </div>
-                <div class="drink-spotlight-item">
-                    <h4>Tomato-Durian in a Cup!!!11</h4>
-                    <p>Nasty, So nasty! Why did I do this.</p>
-                </div>
-                <div class="drink-spotlight-item">
-                    <h4>Avocado-Cazam?</h4>
-                </div>
-            </di >
+            <h2>DRINK COUNT</h2>
+            <div id="drink-count"></div>
         </section>
     </main>
     <footer>
-        FOOTER
+        <div>Bountiful Foods LLC<br>123 Carlsbad Road<br>Carsbad, CA 98765</div>
+        <div>
+            Phone: (123)123-1234<br>
+            Fax: (123)123-1234<br>
+            Pager: (123)123-1234
+        </div>
+        <div>©2023 Brian Crews</div>
     </footer>
     <script src="scripts/datetime.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/header.js"></script>
+    <script src="scripts/drinkcount.js"></script>
 </body>
 
 </html>

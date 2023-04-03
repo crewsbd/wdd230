@@ -24,6 +24,11 @@
         <div id="banner">
             <img src="images/logo.svg" width="50">
             <h1>Bountiful Foods</h1>
+            <span class="social">
+                <a href="http://www.facebook.com" target="_blank"><img src="images/social/facebook-icon.svg" width="30"></a>
+                <a a href="http://www.twitter.com" target="_blank"><img src="images/social/twitter-icon.svg" width="30"></a>
+                <a a href="http://www.snapchat.com" target="_blank"><img src="images/social/snapchat-icon.svg" width="30"></a>
+            </span>
         </div>
         <nav>
             <button id="menu-open"><img src="images/menu-closed.svg" width="30" height="30"></button>
@@ -32,49 +37,41 @@
                 <li><a href="index.html">HOME</a></li>
                 <li class="current-page">FRESH</li>
                 <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="resource.html">RESOURCES<a ></li>
+                <li><a href="resource.html">RESOURCES</a></li>
             </ul>
-
         </nav>
     </header>
     <main>
         <section id="hero">
             <h2>What can you do with our produce? It's up to you!</h2>
-            <img src="images/hero/hero-home.webp" alt="Some vegetables" width="100%">
+            <img src="images/hero/hero-fresh-700.webp" alt="A fruit smoothy"
+                srcset="images/hero/hero-fresh-700.webp 700w, images/hero/hero-fresh-500.webp 500w" width="100%">
         </section>
-        <section id="coast">
-            <h2>THE CALIFORNIA COAST</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Odio morbi quis
-                commodo odio aenean sed adipiscing diam donec. Nunc vel risus commodo viverra. Convallis aenean et
-                tortor at risus viverra adipiscing at. Odio morbi quis commodo odio. Volutpat lacus laoreet non
-                curabitur. Quam adipiscing vitae proin sagittis. Pellentesque habitant morbi tristique senectus et netus
-                et malesuada. Convallis aenean et tortor at risus viverra adipiscing at. Pellentesque habitant morbi
-                tristique senectus.
-            </p>
+        <section id="page-blurb">
+            <h2>DRINK BUILDER</h2>
+            <p>Hey! Have some fun trying out our brand new drink builder.  Mix and match to your hearts content.  When you design your new drink, you can also see a breakdown of the health stats. Find what's best for you.</p>
         </section>
-        <section id="weather">
-            <h2>WEATHER</h2>
-            <p>Sapien et ligula ullamcorper malesuada proin libero nunc consequat interdum. Vel elit scelerisque mauris
-                pellentesque pulvinar pellentesque habitant. Tincidunt augue interdum velit euismod in pellentesque
-                massa. Tristique nulla aliquet enim tortor at auctor urna. Duis ut diam quam nulla porttitor massa id.
-                Nibh praesent tristique magna sit amet purus gravida quis blandit. Et tortor consequat id porta nibh
-                venenatis cras sed. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Massa tincidunt dui ut
-                ornare lectus sit amet. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Tortor at
-                auctor urna nunc. Ornare arcu odio ut sem nulla pharetra diam. Nisl rhoncus mattis rhoncus urna neque
-                viverra justo nec ultrices. Egestas purus viverra accumsan in nisl. Vestibulum mattis ullamcorper velit
-                sed ullamcorper. Netus et malesuada fames ac.</p>
+        <section id="drink-builder">
+            <h2>BUILD A DRINK</h2>
+            <div id="drink-2-column">
+                <form id="drink-form">
+                    <label>First Name<input name="firstname" id="df-name" type="text" minlength="5" required></label>
+                    <label>Email<input name="email" id="df-email" type="email" minlength="6" required></label>
+                    <label>Phone number<input name="phone" id="df-phone" type="tel" minlength="6" required></label>
+                    <label>Select your fruits
+                        <select name="fruit1" id="fruit1" required><option disabled selected value="">Select A Fruit</option></select>
+                        <select name="fruit2" id="fruit2" required><option disabled selected value="">Select A Fruit</option></select>
+                        <select name="fruit3" id="fruit3" required><option disabled selected value="">Select A Fruit</option></select>
+                    </label>
+                    <label>Special Instructions<textarea id="df-inst"></textarea></label>
+                    <input type="button" value="Save" id="savebutton">
+                </form>
+                <div id="drink-output"></div>
+            </di >
         </section>
         <section id="drink-spotlight">
-            <h2>DRINK HIGHLIGHT</h2>
-            <p>Pulvinar pellentesque habitant. Tincidunt augue interdum velit euismod in pellentesque
-                massa. Tristique nulla aliquet enim tortor at auctor urna. Duis ut diam quam nulla porttitor massa id.
-                Nibh praesent tristique magna sit amet purus gravida quis blandit. Et tortor consequat id porta nibh
-                venenatis cras sed. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Massa tincidunt dui ut
-                ornare lectus sit amet. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Tortor at
-                auctor urna nunc. Ornare arcu odio ut sem nulla pharetra diam. Nisl rhoncus mattis rhoncus urna neque
-                viverra justo nec ultrices. Egestas purus viverra accumsan in nisl. Vestibulum mattis ullamcorper velit
-                sed ullamcorper.</p>
+            <h2>DRINK COUNT</h2>
+            <div id="drink-count"></div>
         </section>
     </main>
     <footer>
@@ -82,6 +79,8 @@
     </footer>
     <script src="scripts/datetime.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/fresh.js"></script>
+    <script src="scripts/drinkcount.js"></script>
 </body>
 
 </html>

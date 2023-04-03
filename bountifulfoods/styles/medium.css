@@ -25,4 +25,16 @@
         grid-column: 1/2;
         grid-row: 3/4;
     }
+    #drink-builder {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
+    #page-blurb {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    #history-map {
+        grid-column: 2/3;
+        grid-row: 2/4;
+    }
 }
