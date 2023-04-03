@@ -41,4 +41,7 @@
     #menu-close {
         display: none;
     }
+    .current-page {
+        color: white;
+    }
 }
