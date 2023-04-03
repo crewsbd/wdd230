@@ -5,14 +5,20 @@ const description = document.querySelector('#weather-description');
 const humidity = document.querySelector('#humidity');
 const forecast = document.querySelector('#forecast');
 
-const url = "https://api.openweathermap.org/data/2.5/weather?q=Fremont&units=imperial&appid=3b3063fe321e289fc470d76eaa47f24d";
+const daysForecast = 3;
+const forecastInterval = 3; //hours
+const forecastsPerDay = 24 / forecastInterval //8
+
+const daysEnum = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&appid=3b3063fe321e289fc470d76eaa47f24d";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&appid=3b3063fe321e289fc470d76eaa47f24d";
 
 async function apiFetch() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(forecastURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // this is for testing the call
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -36,15 +42,35 @@ function toUpperCamelCase(inputString) {
     }).join(" ");
 }
 function displayResults(weatherdata) {
-    const description = weatherdata.weather[0].description.toLowerCase();
-    const capitalizedDescription = toUpperCamelCase(description);
+    const currentWeather = weatherdata.list[0];
 
-    temperature.innerHTML = `<strong>${weatherdata.main.temp.toFixed(0)}°F</strong>`;
-    icon.setAttribute("src", `https://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@4x.png`);
-    icon.setAttribute("alt", `${weatherdata.weather[0].description}`);
-    description.innerHTML = capitalizedDescription;
-    description.innerHTML = "HEY";
-    description.textContent = "BLAH"
+    temperature.innerHTML = `<strong>${currentWeather.main.temp.toFixed(0)}°F</strong>`;
+    icon.setAttribute("src", `https://openweathermap.org/img/wn/${currentWeather.weather[0].icon}@4x.png`);
+    icon.setAttribute("alt", `${currentWeather.weather[0].description}`);
+    const capitalizedDescription = toUpperCamelCase(currentWeather.weather[0].description);
+    description.innerHTML = `<h3>${capitalizedDescription}</h3>`;
+    humidity.innerHTML = `<h3>Humidity: ${currentWeather.main.humidity}</h3>`;
+    let forecastHTML = "<h3>FORECAST</h3>";
+    for (let i = 0; i < 3*8; i += forecastsPerDay) {
+        const forecastDate = new Date();
+        forecastDate.setTime(weatherdata.list[i].dt * 1000);
+        forecastHTML += `<div class="forecast-item">${daysEnum[forecastDate.getDay()]}<br>MAX: ${avgMax(i, weatherdata)}°F<br>MIN: ${avgMin(i,weatherdata)}°F</div>`;
+    }
+    forecast.innerHTML = forecastHTML;
+}
+function avgMax(startIndex, forecasts) {
+    let sum = 0;
+    for (let i = startIndex; i < startIndex + forecastsPerDay; i++) {
+        sum += forecasts.list[i].main.temp_max;
+    }
+    return Math.floor(sum / forecastsPerDay);
+}
+function avgMin(startIndex, forecasts) {
+    let sum = 0;
+    for (let i = startIndex; i < startIndex + forecastsPerDay; i++) { 
+        sum += forecasts.list[i].main.temp_min;
+    }
+    return Math.floor(sum / forecastsPerDay);
 }
 
 apiFetch();
