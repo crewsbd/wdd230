@@ -477,6 +477,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.035);
     border-radius: 1em;
     box-sizing: border-box;
+    width: 100%;
 }
 #resource thead {
     font-weight: bolder;
