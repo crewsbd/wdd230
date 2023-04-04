@@ -17,25 +17,27 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Dancing+Script:wght@400;700&family=Oxygen&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="images/favicon.svg" type="image/icon">
 </head>
 
 <body>
     <header>
         <div id="banner">
-            <img src="images/logo.svg" width="50">
+            <img src="images/logo.svg" width="50" alt="Bountiful Foods Logo">
             <h1>Bountiful Foods</h1>
             <span class="social">
-                <a href="http://www.facebook.com" target="_blank"><img src="images/social/facebook-icon.svg"
-                        width="30"></a>
-                <a a href="http://www.twitter.com" target="_blank"><img src="images/social/twitter-icon.svg"
-                        width="30"></a>
-                <a a href="http://www.snapchat.com" target="_blank"><img src="images/social/snapchat-icon.svg"
-                        width="30"></a>
+                <a href="http://www.facebook.com" target="_blank"><img src="images/social/facebook-icon.svg" width="30"
+                        alt="facebook icon"></a>
+                <a href="http://www.twitter.com" target="_blank"><img src="images/social/twitter-icon.svg" width="30"
+                        alt="twitter icon"></a>
+                <a href="http://www.snapchat.com" target="_blank"><img src="images/social/snapchat-icon.svg" width="30"
+                        alt="snapchat icon"></a>
             </span>
         </div>
         <nav>
-            <button id="menu-open"><img src="images/menu-closed.svg" width="30" height="30"></button>
-            <button id="menu-close" class="invisible"><img src="images/menu-opened.svg" width="30" height="30"></button>
+            <button id="menu-open"><img src="images/menu-closed.svg" width="30" height="30" alt="menu button"></button>
+            <button id="menu-close" class="invisible"><img src="images/menu-opened.svg" width="30" height="30"
+                    alt="menu button"></button>
             <ul class="hidden" id="menu-content">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="fresh.html">FRESH</a></li>
@@ -49,15 +51,19 @@
         <section id="hero">
             <h2>It all started here...or did it?</h2>
             <a href="fresh.html">Make A Drink Now!</a>
-            <img src="images/hero/hero-about-500.webp" alt="A fruit smoothy"
-                srcset="images/hero/hero-about-700.webp 700w, images/hero/hero-about-500.webp 500w" width="100%">
+            <img src="images/hero/hero-about-500.webp" alt="Our original store"
+                srcset="images/hero/hero-about-700.webp 700w, images/hero/hero-about-500.webp 500w" width="500"
+                sizes="(min-width: 500px) 700px, 500px" loading="eager">
         </section>
         <section id="about">
             <h2>ABOUT US</h2>
-            <p>Carlsbad is carls-good! That's what we though when we started our first store here in 170 million years
-                BC. We started
-                selling brontosaurus meat. Then they told us brontosaurus's didn't exist. There was a huge recall.
+            <p>Carlsbad is carls-good! That's what we though when we started our first store here in 1922. We are a
+                small business who sell locally grown, organic food. That's what the cool kids eat. Although we started
+                in Carlsbad, we have a strong presense along the southern California coast, from Los Angeles to San
+                Diego.
             </p>
+            <p>Most of our food is sourced directly from farmers in the area. So you can get food from cool people who
+                are like you, instead of weirdos somewhere else.</p>
         </section>
         <section id="history-map">
             <h2>CARLSBAD</h2>
@@ -75,7 +81,13 @@
         </section>
     </main>
     <footer>
-        FOOTER
+        <div>Bountiful Foods LLC<br>123 Carlsbad Road<br>Carsbad, CA 98765</div>
+        <div>
+            Phone: (123)123-1234<br>
+            Fax: (123)123-1234<br>
+            Pager: (123)123-1234
+        </div>
+        <div>©2023 Brian Crews</div>
     </footer>
     <script src="scripts/datetime.js"></script>
     <script src="scripts/menu.js"></script>

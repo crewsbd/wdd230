@@ -9,7 +9,7 @@ const daysForecast = 3;
 const forecastInterval = 3; //hours
 const forecastsPerDay = 24 / forecastInterval //8
 
-const daysEnum = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+const daysEnum = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
 
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&units=imperial&appid=3b3063fe321e289fc470d76eaa47f24d";
 const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=imperial&appid=3b3063fe321e289fc470d76eaa47f24d";
@@ -54,7 +54,7 @@ function displayResults(weatherdata) {
     for (let i = 0; i < 3*8; i += forecastsPerDay) {
         const forecastDate = new Date();
         forecastDate.setTime(weatherdata.list[i].dt * 1000);
-        forecastHTML += `<div class="forecast-item">${daysEnum[forecastDate.getDay()]}<br>MAX: ${avgMax(i, weatherdata)}°F<br>MIN: ${avgMin(i,weatherdata)}°F</div>`;
+        forecastHTML += `<div class="forecast-item">${daysEnum[forecastDate.getDay()]}<br>High: ${avgMax(i, weatherdata)}°F<br>Low: ${avgMin(i,weatherdata)}°F</div>`;
     }
     forecast.innerHTML = forecastHTML;
 }

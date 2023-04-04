@@ -17,22 +17,27 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Dancing+Script:wght@400;700&family=Oxygen&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="images/favicon.svg" type="image/icon">
 </head>
 
 <body>
     <header>
         <div id="banner">
-            <img src="images/logo.svg" width="50">
+            <img src="images/logo.svg" width="50" alt="Bountiful Foods Logo">
             <h1>Bountiful Foods</h1>
             <span class="social">
-                <a href="http://www.facebook.com" target="_blank"><img src="images/social/facebook-icon.svg" width="30"></a>
-                <a a href="http://www.twitter.com" target="_blank"><img src="images/social/twitter-icon.svg" width="30"></a>
-                <a a href="http://www.snapchat.com" target="_blank"><img src="images/social/snapchat-icon.svg" width="30"></a>
+                <a href="http://www.facebook.com" target="_blank"><img src="images/social/facebook-icon.svg" width="30"
+                        alt="facebook icon"></a>
+                <a href="http://www.twitter.com" target="_blank"><img src="images/social/twitter-icon.svg" width="30"
+                        alt="twitter icon"></a>
+                <a href="http://www.snapchat.com" target="_blank"><img src="images/social/snapchat-icon.svg" width="30"
+                        alt="snapchat icon"></a>
             </span>
         </div>
         <nav>
-            <button id="menu-open"><img src="images/menu-closed.svg" width="30" height="30"></button>
-            <button id="menu-close" class="invisible"><img src="images/menu-opened.svg" width="30" height="30"></button>
+            <button id="menu-open"><img src="images/menu-closed.svg" width="30" height="30" alt="menu button"></button>
+            <button id="menu-close" class="invisible"><img src="images/menu-opened.svg" width="30" height="30"
+                    alt="menu button"></button>
             <ul class="hidden" id="menu-content">
                 <li><a href="index.html">HOME</a></li>
                 <li class="current-page">FRESH</li>
@@ -45,11 +50,13 @@
         <section id="hero">
             <h2>What can you do with our produce? It's up to you!</h2>
             <img src="images/hero/hero-fresh-700.webp" alt="A fruit smoothy"
-                srcset="images/hero/hero-fresh-700.webp 700w, images/hero/hero-fresh-500.webp 500w" width="100%">
+                srcset="images/hero/hero-fresh-700.webp 700w, images/hero/hero-fresh-500.webp 500w" width="500"
+                sizes="(min-width: 500px) 700px, 500px" loading="eager">
         </section>
         <section id="page-blurb">
             <h2>DRINK BUILDER</h2>
-            <p>Hey! Have some fun trying out our brand new drink builder.  Mix and match to your hearts content.  When you design your new drink, you can also see a breakdown of the health stats. Find what's best for you.</p>
+            <p>Hey! Have some fun trying out our brand new drink builder. Mix and match to your hearts content. When you
+                design your new drink, you can also see a breakdown of the health stats. Find what's best for you.</p>
         </section>
         <section id="drink-builder">
             <h2>BUILD A DRINK</h2>
@@ -58,16 +65,22 @@
                     <label>First Name<input name="firstname" id="df-name" type="text" minlength="5" required></label>
                     <label>Email<input name="email" id="df-email" type="email" minlength="6" required></label>
                     <label>Phone number<input name="phone" id="df-phone" type="tel" minlength="6" required></label>
-                    <label>Select your fruits
-                        <select name="fruit1" id="fruit1" required><option disabled selected value="">Select A Fruit</option></select>
-                        <select name="fruit2" id="fruit2" required><option disabled selected value="">Select A Fruit</option></select>
-                        <select name="fruit3" id="fruit3" required><option disabled selected value="">Select A Fruit</option></select>
-                    </label>
+                    <label id="fruits">Select your fruits</label>
+                    <select name="fruit1" id="fruit1" aria-labelledby="fruits" required>
+                        <option disabled selected value="">Select A Fruit</option>
+                    </select>
+                    <select name="fruit2" id="fruit2" aria-labelledby="fruits" required>
+                        <option disabled selected value="">Select A Fruit</option>
+                    </select>
+                    <select name="fruit3" id="fruit3" aria-labelledby="fruits" required>
+                        <option disabled selected value="">Select A Fruit</option>
+                    </select>
+
                     <label>Special Instructions<textarea id="df-inst"></textarea></label>
                     <input type="button" value="Save" id="savebutton">
                 </form>
                 <div id="drink-output"></div>
-            </di >
+            </div>
         </section>
         <section id="drink-spotlight">
             <h2>DRINK COUNT</h2>
@@ -75,7 +88,13 @@
         </section>
     </main>
     <footer>
-        FOOTER
+        <div>Bountiful Foods LLC<br>123 Carlsbad Road<br>Carsbad, CA 98765</div>
+        <div>
+            Phone: (123)123-1234<br>
+            Fax: (123)123-1234<br>
+            Pager: (123)123-1234
+        </div>
+        <div>©2023 Brian Crews</div>
     </footer>
     <script src="scripts/datetime.js"></script>
     <script src="scripts/menu.js"></script>
