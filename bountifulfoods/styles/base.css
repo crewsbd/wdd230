@@ -478,6 +478,7 @@ footer {
     border-radius: 1em;
     box-sizing: border-box;
     width: 100%;
+    overflow: hidden;
 }
 #resource thead {
     font-weight: bolder;
