@@ -1,3 +1,4 @@
+import {updateDrinkCount} from './drinkcount';
 async function queryFruit() {
     const url = "json/fruit.json";
 
@@ -25,7 +26,7 @@ async function queryFruit() {
 
     });
     function getValue(fieldName, targetFruit) {
-        for (i = 0; i < fruits.length; i++) {
+        for (let i = 0; i < fruits.length; i++) {
             if (fruits[i].name == targetFruit) {
                 return fruits[i].nutritions[fieldName];
             }
@@ -39,7 +40,7 @@ async function queryFruit() {
         return sum;
     }
 
-    function save(event) {
+    function save() {
 
         if (document.querySelector("#drink-form").checkValidity()) {
             console.log("Pushed it!");
