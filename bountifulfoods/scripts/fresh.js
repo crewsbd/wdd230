@@ -1,4 +1,3 @@
-import {updateDrinkCount} from './drinkcount';
 async function queryFruit() {
     const url = "json/fruit.json";
 
