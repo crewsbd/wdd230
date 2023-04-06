@@ -66,9 +66,16 @@
         </section>
         <section id="history-map">
             <h2>CARLSBAD</h2>
-            <iframe id="coast-map"
+            <!--<iframe id="coast-map"
                 src="https://www.google.com/maps/d/u/0/embed?mid=1rnYX7bUUjaqIZVczuNv-PR3OVke05Wo&ehbc=2E312F"
-                width="500" height="500"></iframe>
+                width="500" height="500"></iframe> -->
+            <a href="https://www.google.com/maps/d/u/0/viewer?mid=1rnYX7bUUjaqIZVczuNv-PR3OVke05Wo&ll=33.12984657153446%2C-117.30745870000001&z=12"
+                target="_blank">
+                <img src="images/place-holder.svg" class="map"
+                    data-src="images/map_610.webp 610w, images/map_420.webp 420w" srcset="images/place-holder.svg"
+                    sizes="(min-width: 700px) 610px, 420px" alt="Map of our store and trucks" loading="eager"
+                    width="420">
+            </a>
         </section>
         <section id="contact">
             <h2>CONTACT INFORMATION</h2>
@@ -90,6 +97,7 @@
     </footer>
     <script src="scripts/datetime.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/lazyload.js"></script>
 </body>
 
 </html>
