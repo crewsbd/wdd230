@@ -290,10 +290,12 @@ img {
     /*gradual unblur lazy loaded images */
     filter: blur(0em);
     transition: filter .5s;
+    height: auto;
 }
 
 .map {
     width: 100%;
+    height: auto;
     border: 1px solid rgb(230, 230, 230);
     box-sizing: border-box;
 }
